@@ -1,1 +1,667 @@
-.red{color: red}
+/*
+============================================================
+=====                    GLOBAL                       ======
+============================================================
+ */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*
+============================================================
+=====                    JOUR 1                       ======
+============================================================
+ */
+
+.frame1 {
+
+    background: linear-gradient(35deg, #433CA0 0%, #4882B5 50%, #4EC3C9 100%) !important;
+
+}
+
+
+.d1-first-title-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.d1-first-title-1__1head, .d1-first-title-1__1body, .d1-first-title-1__10, .d1-first-title-1__100 {
+
+    margin-inline: -9px;
+}
+
+.d1-first-title-1__100, .d1-first-title-1__10 {
+    width: 134px;
+    height: 134px;
+    border: 30px solid white;
+    border-radius: 50%;
+    box-shadow: #00000052 0px 0px 20px -1px;
+}
+
+.d1-first-title-1__1head {
+    z-index: 1;
+    width: 30px;
+    height: 58px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: #00000052 0px 0px 20px -1px;
+    transform-origin: center;
+    rotate: 53deg;
+    transform: translateX(-9px) translateY(11px);
+}
+
+.d1-first-title-1__1body {
+    z-index: 2;
+    width: 30px;
+    height: 134px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: #00000052 0px 0px 20px -1px;
+}
+
+.d1-first-title-1__10 {
+    z-index: 1;
+}
+
+.d1-first-title-1__100 {
+    z-index: 0;
+}
+
+.d1-second-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 800;
+    letter-spacing: 14px;
+}
+
+.d1-third-title-1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+
+
+/*
+============================================================
+=====                    JOUR 2                       ======
+============================================================
+ */
+
+.frame2 {
+    background: #d3d7cc !important;
+}
+
+.d2-burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 88px;
+    height: 68px;
+    cursor: pointer;
+}
+
+.d2-burger_bar1,
+.d2-burger_bar2,
+.d2-burger_bar3 {
+    width: 100%;
+    background: white;
+    height: 10px;
+    border-radius: 20px;
+    position: absolute;
+
+    box-shadow: #0000003b 0px 0px 10px 1px;
+    transition: top 1s, transform 0.5s ease; /* Notez le délai ajouté à la transformation */
+
+}
+
+.d2-burger_bar1 {
+    top: 0%;
+}
+
+.d2-burger_bar2 {
+    top: 50%
+}
+
+.d2-burger_bar3 {
+    top: 100%
+}
+
+
+/*
+============================================================
+=====                    JOUR 3                       ======
+============================================================
+ */
+.frame3 {
+    background: #8885a9 !important;
+}
+
+.d3-circle {
+
+    width: 181px;
+    height: 181px;
+    border-radius: 50%;
+    background: antiquewhite;
+    clip-path: border-box;
+}
+
+.d3-sky {
+    width: 100%;
+    height: 62%;
+    background: skyblue;
+    animation: d3-sky 10s infinite;
+}
+
+.d3-leftPyramide {
+    display: inline-block;
+    position: absolute;
+    top: 36%;
+    height: 48px;
+    width: 100%;
+    background: white;
+    clip-path: polygon(46% 0%, 9% 100%, 47% 100%);
+    animation: d3-rightPyramide 10s 6s infinite;
+}
+
+.d3-rightPyramide {
+    display: inline-block;
+    position: absolute;
+    top: 36%;
+    height: 48px;
+    width: 100%;
+    background: #e6e5e4;
+    clip-path: polygon(79% 100%, 46% 100%, 46% 0%);
+    animation: d3-rightPyramide 10s infinite;
+}
+
+.d3-shadow {
+    position: absolute;
+    z-index: 2;
+    top: 113px;
+    left: -80px;
+    height: 30px;
+    width: 360px;
+    background: rgba(0, 0, 0, 0.2);
+    transform-origin: 50% 0%;
+    clip-path: polygon(98px 0%, 219px 0%, 100% 100%);
+    animation: d3-shadow 10s infinite;
+}
+
+.d3-sun {
+
+    width: 100%;
+    height: 171%;
+    position: absolute;
+    top: 20%;
+    transform-origin: center;
+    animation: d3-rotation 10s ease-out infinite;
+}
+
+.d3-sun::before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    bottom: 0%;
+    right: 0%;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: inset white 0px -7px 16px 3px;
+
+}
+
+.d3-sun::after {
+    content: '';
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    top: 0%;
+    left: 0%;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: inset #eeeeee 0px -7px 0px 3px;
+
+}
+
+@keyframes d3-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes d3-sky {
+    0% {
+        background: #1c2e7c;
+    }
+    50% {
+        background: skyblue;
+    }
+    100% {
+        background: #1c2e7c;
+    }
+}
+
+@keyframes d3-rightPyramide {
+    10% {
+
+        background: #e6e5e4
+    }
+
+    20% {
+
+        background: #e6e5e4;
+    }
+
+    35% {
+        background: white;
+
+    }
+    36% {
+        background: white;
+
+    }
+    37% {
+
+        background: white;
+
+    }
+    50% {
+        background: #e6e5e4;
+    }
+    65% {
+
+        background: white;
+    }
+
+    100% {
+        background: white;
+    }
+}
+
+@keyframes d3-shadow {
+    10% {
+
+        height: 30px;
+        clip-path: polygon(98px 0%, 219px 0%, 50% 100%);
+    }
+
+    20% {
+
+        clip-path: polygon(98px 0%, 219px 0%, 5% 100%);
+    }
+
+    35% {
+
+        height: 0px;
+        clip-path: polygon(98px 0%, 219px 0%, -19% 100%);
+
+    }
+    36% {
+        height: 0px;
+        clip-path: polygon(98px 0%, 219px 0%, 113% 100%);
+
+    }
+    37% {
+
+        height: 30px;
+        clip-path: polygon(98px 0%, 219px 0%, 113% 100%);
+
+    }
+    50% {
+        height: 30px;
+        clip-path: polygon(98px 0%, 219px 0%, 5% 100%);
+    }
+    65% {
+
+        clip-path: polygon(98px 0%, 219px 0%, -19% 100%);
+    }
+
+    100% {
+        height: 0px;
+        clip-path: polygon(98px 0%, 219px 0%, -19% 100%);
+    }
+}
+
+
+/*
+============================================================
+=====                    JOUR 4                       ======
+============================================================
+ */
+
+.frame4 {
+    background: radial-gradient(#eb6c54, #ec1515);
+
+}
+
+.center4 {
+    height: 30%;
+    width: 30%;
+}
+
+.d4-round1, .d4-round2, .d4-round3 {
+
+    border-radius: 50%;
+    background: wheat;
+    box-shadow: inset white -13px 7px 9px -5px, #00000063 0px 0px 10px 2px;
+    border: white 2px solid;
+    transform-origin: center;
+    position: absolute;
+
+}
+
+.d4-round1 {
+    height: 100px;
+    width: 100px;
+    animation: d4-round1 5s infinite;
+    top: 5%;
+    left: 9%;
+}
+
+.d4-round2 {
+    height: 75px;
+    width: 75px;
+    scale: 0;
+    top: 15%;
+    left: 20%;
+
+    animation: d4-round2 5s infinite;
+}
+
+.d4-round3 {
+    height: 50px;
+    width: 50px;
+    top: 26%;
+    left: 30%;
+    scale: 0;
+    animation: d4-round3 5s infinite;
+}
+
+@keyframes d4-round1 {
+    0%, 100% {
+        scale: 0;
+    }
+    50% {
+        scale: 1;
+    }
+
+}
+
+@keyframes d4-round2 {
+    20%, 85% {
+        scale: 0;
+    }
+    50% {
+        scale: 1;
+    }
+
+}
+
+@keyframes d4-round3 {
+    30%, 70% {
+        scale: 0;
+    }
+    50% {
+        scale: 1;
+    }
+
+}
+
+
+/*
+============================================================
+=====                    JOUR 5                       ======
+============================================================
+*/
+
+.d5-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    background: #942494;
+}
+
+.d5-header span {
+
+    color: #e7e6e6;
+    font-size: .9em;
+
+}
+
+.d5-header h3 {
+    color: white;
+    font-weight: 800;
+    font-size: 1.5em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.d5-header-left {
+    text-align: left;
+}
+
+.d5-header-right {
+    text-align: end;
+}
+
+.d5-legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-block: 1em;
+}
+
+.d5-legend div {
+    margin-inline: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.d5-legend span {
+
+    color: gray;
+}
+
+.d5-legend .rect1, .d5-legend .rect2 {
+    width: 15px;
+    height: 5px;
+
+}
+
+.d5-legend .rect1 {
+    background: #4EC3C9;
+}
+
+.d5-legend .rect2 {
+    background: #8885a9;
+}
+
+.d5-grapheContainer {
+    position: relative;
+    height: 200px;
+    padding: 20px;
+}
+
+.d5-svg1 ,  .d5-svg2 {
+    position: relative;
+    z-index: 1;
+}
+
+.d5-line1,
+.d5-line2,
+.d5-line3 {
+    width: 88%;
+    height: 2px;
+    background: #f7f2f2;
+    position: absolute;
+
+}
+
+.d5-line1 {
+    top: 25%;
+}
+
+.d5-line2 {
+
+    top: 54%;
+}
+
+.d5-line3 {
+
+    top: 85%;
+}
+
+
+.d5-svg1 .point, .d5-svg2 .point {
+    width: 7px;
+    height: 7px;
+    position: absolute;
+}
+
+.d5-svg1 .point {
+    background: #942494;
+
+}
+
+.d5-svg2 .point {
+    background: #245194;
+}
+
+.d5-svg1 .point1 {
+    top: 53%;
+    left: 2%;
+}
+
+.d5-svg1 .point2 {
+    top: 11%;
+    left: 13%;
+}
+
+.d5-svg1 .point3 {
+    top: 11%;
+    left: 35%;
+}
+
+.d5-svg1 .point4 {
+    top: 44%;
+    left: 47%;
+}
+
+.d5-svg1 .point5 {
+    top: 56%;
+    left: 58%;
+
+}
+
+.d5-svg1 .point6 {
+    top: 20%;
+    left: 69%;
+
+}
+
+.d5-svg1 .point7 {
+    top: 59%;
+    left: 74%;
+}
+
+.d5-svg1 .point8 {
+    top: 9%;
+    left: 87%;
+}
+
+.d5-svg1 .point9 {
+    top: 26%;
+    left: 24%;
+
+}
+
+.d5-svg2 .point1 {
+    top: 55%;
+    left: 2%;
+}
+
+.d5-svg2 .point2 {
+    top: 12%;
+    left: 13%;
+}
+
+.d5-svg2 .point3 {
+    top: 25%;
+    left: 24%;
+}
+
+.d5-svg2 .point4 {
+    top: 11%;
+    left: 35%;
+}
+
+.d5-svg2 .point5 {
+    top: 43%;
+    left: 47%;
+
+}
+
+.d5-svg2 .point6 {
+    top: 55%;
+    left: 58%;
+}
+
+.d5-svg2 .point7 {
+    top: 19%;
+    left: 69%;
+}
+
+.d5-svg2 .point8 {
+    top: 58%;
+    left: 74%;
+}
+
+.d5-svg2 .point9 {
+    top: 7%;
+    left: 87%;
+}
+.d5-axeY{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: uppercase;
+    color: #a7a3a3;
+    font-size: 0.8em;
+}

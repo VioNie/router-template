@@ -8,8 +8,8 @@ $router->map( 'GET', '/', function() {
 
 });
 // map users details page
-$router->map( 'GET|POST', '/page/[i:id]/', function( $id ) {
-    App\View\View::render('p'.$id,[]);
+$router->map( 'GET|POST', '/day/[i:id]/', function( $id ) {
+    App\View\View::render('day/cssDay'.$id,[]);
 
 });
 

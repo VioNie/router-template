@@ -4,12 +4,13 @@ $router = new AltoRouter();
 
 
 $router->map( 'GET', '/', function() {
-    require __DIR__ . '/../templates/home.php.html';
+    App\View\View::render('home',[]);
 
 });
 // map users details page
 $router->map( 'GET|POST', '/page/[i:id]/', function( $id ) {
-    require __DIR__ . '/../templates/p'.$id.'.php.html';
+    App\View\View::render('p'.$id,[]);
+
 });
 
 

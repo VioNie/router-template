@@ -8,7 +8,19 @@
     <title>Document</title>
 </head>
 <body>
-<h1>p1</h1>*
-<a href="/">home</a>
+<header>
+    <!-- Ici, mettez votre code HTML pour la navbar -->
+    <nav>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <?php echo $content; ?>
+</main>
+<footer>
+    <p>Copyright © Votre entreprise 2024</p>
+</footer>
 </body>
 </html>

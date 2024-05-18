@@ -1263,22 +1263,26 @@ a {
     bottom: -26%;
     left: 32%;
 }
-.d9-mount-3{
+
+.d9-mount-3 {
     bottom: -33%;
     left: 83%;
 }
-.d9-mount-4{
+
+.d9-mount-4 {
     width: 238px;
     height: 145px;
     bottom: -7%;
     left: -1%;
 }
-.d9-mount-5{
+
+.d9-mount-5 {
     width: 238px;
     height: 145px;
     bottom: -12%;
     left: 61%;
 }
+
 .d9-mount-1, .d9-mount-2, .d9-mount-3 {
     background: #303C5D;
     z-index: 2;
@@ -1289,8 +1293,10 @@ a {
     z-index: 1;
 
 }
+
 /*=====MOON */
 .d9-moon {
+
     background: #F6EDBD;
     height: 88px;
     width: 88px;
@@ -1300,51 +1306,322 @@ a {
     top: 10%;
     left: 10%;
 }
-.d9-moon .point{
+
+.d9-moon .point {
     background: #ECE1A8;
     border-radius: 50%;
     position: absolute;
     filter: blur(1px);
+
+    box-shadow: inset 0px 0px 1px #e4d794;
+
 }
+
 .d9-point1 {
-    /* Add your styles for d9-point1 here */
+    width: 13px;
+    height: 12px;
+    top: 21%;
+    left: 32%;
 }
 
 .d9-point2 {
-    /* Add your styles for d9-point2 here */
+    width: 5px;
+    height: 6px;
+    top: 42%;
+    left: 10%;
+
 }
 
 .d9-point3 {
-    /* Add your styles for d9-point3 here */
+    width: 5px;
+    height: 5px;
+    top: 68%;
+    left: 13%;
 }
 
 .d9-point4 {
-    /* Add your styles for d9-point4 here */
+    width: 9px;
+    height: 7px;
+    top: 62%;
+    left: 64%;
+
 }
 
 .d9-point5 {
-    /* Add your styles for d9-point5 here */
+    width: 5px;
+    height: 5px;
+    top: 68%;
+    left: 82%;
 }
 
 .d9-point6 {
-    /* Add your styles for d9-point6 here */
+    width: 8px;
+    height: 6px;
+    top: 82%;
+    left: 50%;
+
 }
 
 .d9-point7 {
-    /* Add your styles for d9-point7 here */
+    width: 5px;
+    height: 6px;
+    top: 29%;
+    left: 70%;
+
 }
 
 .d9-point8 {
-    /* Add your styles for d9-point8 here */
+    width: 5px;
+    height: 5px;
+    top: 49%;
+    left: 39%;
+
 }
 
 .d9-point9 {
-    /* Add your styles for d9-point9 here */
+    width: 5px;
+    height: 7px;
+    top: 74%;
+    left: 32%;
 }
 
+
 .d9-point10 {
-    /* Add your styles for d9-point10 here */
+    width: 13px;
+    height: 5px;
+    top: 5%;
+    left: 59%;
+
 }
+
+/*=====RAIN */
+.d9-drop {
+    width: 8px;
+    height: 13px;
+    position: absolute;
+    border-radius: 50%;
+    top: -4%; /*-4%*/
+    left: 10%;
+    background: #7FC1F9;
+    transform: translateX(0%) rotate(20deg);
+    z-index: 3;
+}
+
+.d9-drop:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -6px;
+    left: -1px;
+    height: 10px;
+    width: 13px;
+    clip-path: polygon(37% 0%, 10% 100%, 70% 107%);
+    background: #7FC1F9;
+}
+
+.d9-drop1 {
+    left: 15%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.d9-drop2 {
+    left: 22.08%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+.d9-drop3 {
+    left: 29.16%;
+    animation: d9-drop 0.8s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+
+.d9-drop4 {
+    left: 36.24%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+
+.d9-drop5 {
+    left: 43.32%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+
+.d9-drop6 {
+    left: 50.40%;
+    animation: d9-drop 0.7s ease-in-out infinite;
+    animation-delay: 0.7s;
+}
+
+
+.d9-drop7 {
+    left: 57.48%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 1.3s;
+}
+
+.d9-drop8 {
+    left: 64.56%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 1.6s;
+}
+
+.d9-drop9 {
+    left: 71.64%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+.d9-drop10 {
+    left: 78.72%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+
+.d9-drop11 {
+    left: 85.80%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 1.9s;
+}
+
+
+.d9-drop12 {
+    left: 92.88%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+
+.d9-drop13 {
+    left: 100%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 2.5s;
+}
+
+
+.d9-dropMedium {
+    width: 5px;
+    height: 7px;
+    position: absolute;
+    border-radius: 50%;
+    top: -4%;
+    left: 10%;
+    background: #7391a9;
+    transform: translateX(0%) rotate(20deg);
+    z-index: 3;
+}
+
+.d9-dropMedium:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -3px;
+    left: -1px;
+    height: 6px;
+    width: 9px;
+    clip-path: polygon(37% 0%, 10% 100%, 70% 107%);
+    background: #7391a9;
+}
+
+.d9-dropMedium1 {
+    left: 10%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.d9-dropMedium1::after {
+    animation: d9-drop-after 1s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.d9-dropMedium2 {
+    left: 17.08%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+
+.d9-dropMedium3 {
+    left: 24.16%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+
+.d9-dropMedium4 {
+    left: 31.24%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+
+.d9-dropMedium5 {
+    left: 38.32%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+
+.d9-dropMedium6 {
+    left: 45.40%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+
+.d9-dropMedium7 {
+    left: 52.48%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+
+.d9-dropMedium8 {
+    left: 59.56%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.7s;
+}
+
+
+.d9-dropMedium9 {
+    left: 66.64%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+.d9-dropMedium10 {
+    left: 73.72%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+
+.d9-dropMedium11 {
+    left: 80.80%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+
+.d9-dropMedium12 {
+    left: 83.88%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+
+.d9-drop13 {
+    left: 95%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
 
 /*=====INFORMATIONS */
 .d9-weatherInformations {
@@ -1366,4 +1643,370 @@ a {
     position: relative;
     clip-path: border-box;
     z-index: 0;
+}
+
+@keyframes d9-drop {
+    0% {
+        top: -4%;
+
+    }
+    100% {
+
+        top: 104%;
+        transform: translateX(-400%) rotate(0deg);
+    }
+
+}
+
+
+/*
+============================================================
+=====                    JOUR 10                       ======
+============================================================
+*/
+.frame10 {
+    background: #4a4946;
+}
+
+.center10 {
+    width: 66%;
+    height: 66%;
+    background: #4a4946;
+    border-radius: 50%;
+    box-shadow: 6px 6px 12px #3c3b39,
+    -6px -6px 12px #585753;
+}
+
+.d10-ringContainer {
+    width: 93%;
+    height: 93%;
+    border-radius: 50%;
+    clip-path: border-box;
+    position: relative;
+
+}
+
+.d10-ring {
+    height: 150%;
+    width: 150%;
+    clip-path: polygon(100% 0%, 100% 0%, 50% 0%, 50% 50%, 50% 0%);
+
+    background: linear-gradient(90deg, #D49941 2.2%, #D49941 19%, #FAE167 35.31%, #F7F2BA 50.18%, #FAE167 66.49%, #D49941 81.84%, #D49941 98.16%);
+
+    animation: d10-ring 10s linear infinite;
+}
+
+.d10-innerClock {
+    width: 95%;
+    height: 95%;
+    background: #4a4946;
+    border-radius: 50%;
+    animation: d10-innerclock 60s linear infinite;
+}
+
+@keyframes d10-ring {
+    0% {
+        clip-path: polygon(100% 0%, 100% 0%, 50% 0%, 50% 50%, 50% 0%);
+    }
+    12.5% {
+        clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 50% 50%, 50% 0%);
+    }
+
+
+    37.5% {
+        clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 50% 50%, 50% 0%);
+    }
+
+
+    50% {
+        clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 50% 50%, 50% 0%);
+    }
+    50.00001% {
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, -1% 0%, 0% 10000%, 50% 50%, 50% 0%);
+    }
+    62.5% {
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%, 0% 100%, 50% 50%, 50% 0%);
+    }
+
+
+    75% {
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%, 1% 0%, 50% 50%, 50% 0%);
+    }
+    100% {
+        clip-path: polygon(100% 0%,
+        100% 100%,
+        0% 100%,
+        0% 0%,
+        50% 0%,
+        50% 50%,
+        50% 0%);
+    }
+
+
+}
+
+.d10-innerClock .points {
+    width: 100%;
+    height: 100%;
+}
+
+.d10-innerClock .point {
+    width: 3px;
+    height: 3px;
+    background: #ffc67b;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.d10-innerClock .point1 {
+    top: 4%;
+    left: 50%;
+}
+
+.d10-innerClock .point2 {
+    top: 50%;
+    left: 4%;
+}
+
+.d10-innerClock .point3 {
+    bottom: 4%;
+    left: 50%;
+}
+
+.d10-innerClock .point4 {
+    right: 4%;
+    top: 50%;
+}
+
+.d10-points2 {
+    transform: translate(-50%, -50%) rotate(9deg);
+}
+
+.d10-points3 {
+    transform: translate(-50%, -50%) rotate(18deg);
+}
+
+.d10-points4 {
+    transform: translate(-50%, -50%) rotate(27deg);
+}
+
+.d10-points5 {
+    transform: translate(-50%, -50%) rotate(36deg);
+}
+
+.d10-points6 {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.d10-points7 {
+    transform: translate(-50%, -50%) rotate(54deg);
+}
+
+.d10-points8 {
+    transform: translate(-50%, -50%) rotate(63deg);
+}
+
+.d10-points9 {
+    transform: translate(-50%, -50%) rotate(72deg);
+}
+
+.d10-points10 {
+    transform: translate(-50%, -50%) rotate(81deg);
+}
+
+@keyframes d10-innerclock {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+}
+
+.d10-data {
+    z-index: 30;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    color: #ffd092;
+
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.d10-dataText {
+    font-size: 1em;
+
+}
+
+.d10-bi:before {
+    animation: d10-scale 2s linear infinite;
+}
+
+@keyframes d10-scale {
+    0%, 100% {
+        scale: 100%;
+    }
+    50% {
+        scale: 120%
+    }
+
+}
+
+/*
+============================================================
+=====                    JOUR 11                       ======
+============================================================
+*/
+.frame11 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.d11-sky {
+    height: 70%;
+    position: relative;
+    background: radial-gradient(#dfc29d, #af955d);
+}
+
+.d11-ground {
+    height: 30%;
+
+    background: url("/image/sol.png");
+    background-repeat: repeat;
+    background-position: left;
+    animation: d11-ground 3s linear infinite;
+}
+
+.d11-shoe {
+    width: 167px;
+    height: 167px;
+    position: absolute;
+
+    background: url('https://100dayscss.com/codepen/doc-martens.svg') center center no-repeat;
+}
+
+.d11-shoe1 {
+    bottom: 0%;
+    left: 5%;
+    transform: rotate(25deg);
+    animation: d11-1 2s ease-in-out infinite;
+}
+
+.d11-shoe2 {
+    bottom: -3%;
+    left: 58%;
+    transform: rotate(-7deg);
+    animation: d11-2 2s ease-in-out infinite;
+}
+
+@keyframes d11-1 {
+    0%, 100% {
+        bottom: 0%;
+        left: 5%;
+        transform: rotate(35deg);
+    }
+
+    30% {
+        bottom: 3%;
+        left: 58%;
+        transform: rotate(-9deg);
+
+    }
+    40% {
+        bottom: -7%;
+        left: 48%;
+        transform: rotate(2deg);
+    }
+    80% {
+        bottom: -7%;
+        left: 20%;
+        transform: rotate(2deg);
+    }
+
+}
+
+@keyframes d11-2 {
+    0%, 100% {
+        bottom: -5%;
+        left: 58%;
+        transform: rotate(-9deg);
+    }
+    10% {
+        bottom: -7%;
+        left: 45%;
+        transform: rotate(-1deg);
+    }
+    25% {
+        bottom: -7%;
+        left: 20%;
+        transform: rotate(-1deg);
+
+    }
+    45% {
+        bottom: 0%;
+        left: 5%;
+        transform: rotate(35deg);;
+    }
+
+}
+
+@keyframes d11-ground {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+/*
+============================================================
+=====                    JOUR 12                       ======
+============================================================
+*/
+.frame12 {
+    background: #bf0991;
+}
+
+.center12 {
+    width: 86%;
+    height: 70%;
+}
+
+.center12::before {
+    content: '„';
+    position: absolute;
+    font-size: 10em;
+    color: #d92ba5;
+    z-index: -1;
+    top: -91%;
+    left: -0%;
+    font-family: Arial, serif;
+}
+
+.center12 {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+
+}
+.center12 cite{
+    font-weight: 300;
+font-style: italic;
+    color: #ffcaeb;
+}
+.center12 p {
+    color: #ffcaeb;
+}
+.center12 .d12-word{
+    background: #f733cd;
+    padding: 2px 11px;
+    position: relative;
 }

@@ -10,7 +10,7 @@
                         Css 100
                     </a>
                     <ul class="dropdown-menu">
-                        <?php for($i = 1 ; $i <10 ; $i ++) :  ?>
+                        <?php for($i = 1 ; $i <100 ; $i ++) :  ?>
                         <li><a class="dropdown-item" href="/day/<?=$i?>/">Jour <?= $i ?></a></li>
                         <?php endfor; ?>
                         <li><hr class="dropdown-divider"></li>

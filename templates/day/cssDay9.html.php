@@ -20,9 +20,36 @@ require_once __DIR__ . '/../component/cssDayHeader.html.php' ?>
         <div class="d9-mount d9-mount-3"></div>
         <div class="d9-mount d9-mount-4"></div>
         <div class="d9-mount d9-mount-5"></div>
+        <div class="d9-drop d9-drop1"></div>
+        <div class="d9-drop d9-drop2"></div>
+        <div class="d9-drop d9-drop3"></div>
+        <div class="d9-drop d9-drop4"></div>
+        <div class="d9-drop d9-drop5"></div>
+        <div class="d9-drop d9-drop6"></div>
+        <div class="d9-drop d9-drop7"></div>
+        <div class="d9-drop d9-drop8"></div>
+        <div class="d9-drop d9-drop9"></div>
+        <div class="d9-drop d9-drop10"></div>
+        <div class="d9-drop d9-drop11"></div>
+        <div class="d9-drop d9-drop12"></div>
+        <div class="d9-drop d9-drop13"></div>
+
+        <div class="d9-dropMedium d9-dropMedium1"></div>
+        <div class="d9-dropMedium d9-dropMedium2"></div>
+        <div class="d9-dropMedium d9-dropMedium3"></div>
+        <div class="d9-dropMedium d9-dropMedium4"></div>
+        <div class="d9-dropMedium d9-dropMedium5"></div>
+        <div class="d9-dropMedium d9-dropMedium6"></div>
+        <div class="d9-dropMedium d9-dropMedium7"></div>
+        <div class="d9-dropMedium d9-dropMedium8"></div>
+        <div class="d9-dropMedium d9-dropMedium9"></div>
+        <div class="d9-dropMedium d9-dropMedium10"></div>
+        <div class="d9-dropMedium d9-dropMedium11"></div>
+        <div class="d9-dropMedium d9-dropMedium12"></div>
+        <div class="d9-dropMedium d9-dropMedium13"></div>
     </div>
-    <div class="d9-weatherInformations">
-        <div class="left d-flex flex-row">
+    <div class="d9-weatherInformations align-items-center">
+        <div class="left d-flex flex-row align-items-center">
             <h1 class="d9-blue me-3">12°</h1>
             <div class="d-flex flex-column"><span>Wind: E 7 km/h</span><span>Humidity: 87%</span></div>
         </div>

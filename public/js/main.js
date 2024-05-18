@@ -65,5 +65,29 @@ function d7menu() {
             menu.style.left = '11%'
         }, 500);
     }
+}
 
+//=================================================== CSS DAY 7
+function d10Day(){
+    const currentDate = new Date();
+    const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const monthsOfYear = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const dayOfMonth = currentDate.getDate();
+    const dayOfWeek = daysOfWeek[currentDate.getDay()];
+    const month = monthsOfYear[currentDate.getMonth()];
+    const year = currentDate.getFullYear();
+    const hour = currentDate.getHours() % 12;
+    const minutes = String(currentDate.getMinutes()).padStart(2, '0');
+
+
+    function updateClock() {
+        const clockText = `${dayOfWeek} ${dayOfMonth} ${month} ${year}`;
+        document.querySelector(".d10-dataText").innerText = clockText;
+
+        const time = `${hour}:${minutes}`
+        document.querySelector(".d10-dataTime").innerText = time;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
 }

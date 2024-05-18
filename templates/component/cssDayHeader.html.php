@@ -12,10 +12,13 @@
     </h4>
 
 
-    <?php if ($day < 5) : ?>
+    <?php
+
+    $file = __DIR__ . '/../day/cssDay'.($day+1).'.html.php';
+    if (file_exists($file)) :  ?>
         <a href="/day/<?= $day + 1 ?>/"><i class="bi bi-caret-right-fill"></i></a>
-    <?php else : ?>
-        <a href="/">Retour <i class="ms-1 bi bi-caret-right-fill"></i></a>
+<?php else: ?>
+        <a href=""></a>
     <?php endif; ?>
 </div>
 

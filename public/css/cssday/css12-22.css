@@ -1,0 +1,274 @@
+/*
+============================================================
+=====                    JOUR 12                       ======
+============================================================
+*/
+.frame12 {
+    background: #4CB6DE;
+}
+
+.center12 {
+    width: 86%;
+    height: 70%;
+}
+
+.center12::before {
+    content: '„';
+    position: absolute;
+    font-size: 12em;
+    color: #6AC2E3;
+    z-index: -1;
+    top: -75%;
+    left: -0%;
+    font-family: Arial, serif;
+}
+
+.center12 {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.center12 cite {
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+}
+
+.center12 p {
+    color: white;
+}
+
+.center12 .d12-word {
+    background: #286F8A;
+    padding: 2px 11px;
+    position: relative;
+}
+
+.d12-info {
+    height: 112px;
+    width: 289px;
+    color: white;
+    display: none;
+    position: absolute;
+    bottom: 140%;
+    left: 0%;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+
+.d12-word:hover .d12-info {
+    display: flex;
+}
+
+.d12-info .pronounce {
+    background: white;
+    color: #6AC2E3;
+    padding: 4px 14px;
+}
+
+.d12-info .paragraphe {
+    background: #286F8A;
+    padding: 4px 14px;
+}
+
+.d12-info::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 6%;
+    width: 30px;
+    height: 14px;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    background: #286F8A;
+}
+
+/*
+============================================================
+=====                    JOUR 13                       ======
+============================================================
+*/
+
+.frame13 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #ded4b8;
+}
+
+.frame13 > .line1 ,  .frame13 > .line2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.d13-hisoka:after {
+    background: url("/image/hisoka.png");
+}
+
+.d13-killua:after {
+
+    background-image: url("/image/killua.png");
+}
+
+.d13-gon:after {
+
+    background-image: url("/image/gon.png");
+}
+
+.d13-leolio:after {
+
+    background-image: url("/image/leolio .png");
+}
+
+.d13-mainImage {
+    width: 190px;
+    height: 190px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.d13-mainImage:after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    position: absolute;
+    z-index: 1;
+}
+.d13-mainImage:hover:after{
+    filter: brightness(0.6);
+}
+.plus, .d13-overlay .close{
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+    background: #ded4b8;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    align-content: center;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    transform-origin: center;
+}
+.d13-mainImage:hover .plus {
+    display: block;
+    z-index: 2;
+    animation: d12-plusEnter 0.5s forwards;
+}
+.d13-mainImage:not(:hover) .plus {
+    display: block;
+    z-index: 2;
+    animation: d12-plusExit 0.5s forwards;
+}
+.d13-mainImage .plus:hover, .d13-overlay .close:hover{
+    background: #b7ad8e;
+
+}
+
+@keyframes d12-plusEnter {
+    0% {
+
+        scale: 150%;
+        opacity: 0;
+    }
+    100% {
+        scale: 100%;
+        opacity: 1;
+    }
+}
+@keyframes d12-plusExit {
+    0% {
+        scale: 100%;
+        opacity: 1;
+    }
+    100% {
+        scale: 150%;
+        opacity: 0;
+    }
+}
+.d13-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.d13-overlay .top, .d13-overlay .bottom{ position: absolute;   z-index: 2; transition: all 1s }
+.d13-overlay .top{
+z-index: 3;
+    top: -47%;
+    background: url('/image/hxh.png');
+    height: 45%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.d13-overlay .bottom{
+    bottom: -57%;
+    background: #ded4b8;
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 59px;
+}
+.d13-overlay .bottom .icone{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.2em;
+    transition: all 0.5s;
+}
+.d13-overlay .bottom .icone:hover{
+   background: black;
+    color: white;
+}
+.d13-overlay .icones{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.d13-overlay .close{
+    position: absolute;
+    z-index: 3;
+    top: 7%;
+    right: 3%;
+    display: block;
+}
+.d13-imageOverlay{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0px 0px 20px -6px black;
+    transition: all 0.5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid black;
+}

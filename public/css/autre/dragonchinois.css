@@ -1,0 +1,461 @@
+:root {
+    --animation-corps: 10s;
+    --decalage-corps: 0.2s
+}
+
+.dragonBackground {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(156deg, #fa8881, #F2DAAF);
+}
+
+.dragonBackground .round {
+    width: 1000px;
+    height: 1000px;
+    background: #FF3529;
+    box-shadow: 10px 10px 20px 2px #ee645b;
+    border-radius: 50%;
+    position: absolute;
+    top: -29%;
+    left: -4%;
+
+}
+
+.bar {
+    width: 649px;
+    height: 41px;
+    border-radius: 456px;
+    background: #ffff4b;
+    position: absolute;
+    bottom: 27%;
+    left: 78%;
+    z-index: 1;
+}
+
+.dragon {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 72%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+/*===============================HEAD=====================*/
+.head {
+    width: 162px;
+    height: 68px;
+    background: #c32424;
+    filter: blur(0.8px);
+    position: absolute;
+    border-radius: 0px 20px 12px 0px;
+    top: 43%;
+    right: 5%;
+
+    animation: head var(--animation-corps) linear infinite;
+}
+
+.head:after {
+    content: '';
+    width: 51%;
+    height: 25px;
+    position: absolute;
+    top: -24px;
+    background: #c32424;
+    border-radius: 0px 20px 0px 0px;
+
+}
+
+.eye {
+    width: 17px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    top: -17%;
+    left: 29%;
+    position: absolute;
+    z-index: 1;
+}
+
+.eye:after {
+    content: '';
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    bottom: 14%;
+    right: 20%;
+    background: white;
+    border-radius: 50%;
+    animation: eye 5s infinite;
+}
+
+.mouth {
+    background: white;
+    width: 50%;
+    position: absolute;
+    height: 7px;
+    bottom: 25%;
+    right: 0%;
+}
+
+.horn {
+    width: 90%;
+    height: 59px;
+    background: #7a0f0f;
+    position: absolute;
+    top: -52%;
+    left: -72%;
+    z-index: 3;
+    clip-path: polygon(30% 63%, 51% 23%, 62% 39%, 96% 32%, 96% 69%, 64% 67%, 49% 56%, 30% 87%, -2% 68%);
+    transform: rotate(39deg);
+    transform-origin: right;
+}
+
+.moustache {
+    width: 90%;
+    height: 33px;
+    background: #ffb910;
+    position: absolute;
+    bottom: 28%;
+    left: -42%;
+    z-index: 3;
+    clip-path: polygon(31% 21%, 50% 52%, 45% 57%, 68% 27%, 74% 42%, 82% 23%, 88% 40%, 94% 21%, 100% 64%, 93% 52%, 88% 72%, 82% 55%, 72% 75%, 67% 64%, 49% 100%, 35% 75%, 26% 91%, 1% 41%);
+    transform: rotate(340deg);
+    transform-origin: right;
+    -webkit-animation: moustache 5s ease-in-out infinite;
+    -o-animation: moustache 5s ease-in-out infinite;
+    animation: moustache 5s ease-in-out infinite;
+}
+
+.tache {
+    position: absolute;
+    width: 19px;
+    height: 8px;
+    background: #aa2121;
+    border-radius: 0px 0px 20px 20px;
+
+}
+.skin .tache{
+    background: #8e1f1f;
+}
+.taches .tache1 {
+
+    right: 12%;
+}
+
+.taches .tache2 {
+    right: 26%;
+    width: 10px;
+    height: 5px;
+}
+
+.taches .tache3 {
+    right: 35%;
+}
+
+.taches .tache4 {
+    transform: rotate(180deg);
+    bottom: 0%;
+    height: 5px;
+    right: 12%;
+}
+
+.taches .tache5 {
+    transform: rotate(180deg);
+    bottom: 0%;
+    height: 5px;
+    right: 28%;
+}
+
+.taches .tache6 {
+    transform: rotate(180deg);
+    bottom: 0%;
+    height: 5px;
+    right: 61%;
+}
+
+@keyframes moustache {
+    0%, 100% {
+        transform: rotate(340deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes eye {
+    0%, 100% {
+        height: 5px;
+    }
+    50% {
+        height: 0%;
+    }
+}
+
+/*===============================CORPS=====================*/
+.corps {
+    width: 80%;
+    height: 89%;
+    position: relative;
+}
+
+.dragon .corpsPart {
+    width: 70px;
+    height: 90px;
+    position: absolute;
+    animation: corps var(--animation-corps) linear infinite;
+}
+
+ .dragon .corpsPart .skin{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(45deg, #c32424 57%, #aa0e0e 100%);
+    border-radius: 4px 30px 30px 4px;
+    animation: corpsAfter var(--animation-corps) linear infinite ;
+}
+
+.corpsPart .ecaille {
+
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #f2e74e;
+    border-radius: 2px 10px 10px 2px;
+    z-index: 1;
+    box-shadow: -2px 0px 0px 1px #968b10;
+
+}
+
+
+.corpsPart .ecaille1 {
+    left: 30%;
+    top: 0%;
+
+}
+
+.corpsPart .ecaille2 {
+    left: 61%;
+    top: 21%;
+}
+
+.corpsPart .ecaille3 {
+    left: 57%;
+    top: -1%;
+}
+
+.corpsPart .ecaille4 {
+    left: 7%;
+    top: 1%;
+
+}
+
+.corpsPart .ecaille5 {
+    left: 7%;
+    top: 24%;
+
+}
+
+.corpsPart .ecaille6 {
+    left: 33%;
+    top: 23%;
+
+}
+
+.dragon .corpsPart1 { right: 20%; top: 40%; animation-delay: calc(var(--decalage-corps) * 0) }
+.dragon .corpsPart2 { right: 24%; top: 44%; animation-delay: calc(var(--decalage-corps) * 1); }
+.dragon .corpsPart2 .skin { transform: rotate(353deg); }
+
+.dragon .corpsPart3 { right: 28%; top: 47%; animation-delay: calc(var(--decalage-corps) * 2); }
+.dragon .corpsPart3 .skin { transform: rotate(342deg); }
+
+.dragon .corpsPart4 { right: 33%; top: 52%; animation-delay: calc(var(--decalage-corps) * 3); }
+.dragon .corpsPart4 .skin { transform: rotate(346deg); }
+
+.dragon .corpsPart5 { right: 38%; top: 55%; animation-delay: calc(var(--decalage-corps) * 4); }
+.dragon .corpsPart5 .skin { transform: rotate(359deg); }
+
+.dragon .corpsPart6 { right: 43%; top: 54%; animation-delay: calc(var(--decalage-corps) * 5); }
+.dragon .corpsPart6 .skin { transform: rotate(15deg); }
+
+.dragon .corpsPart7 { right: 48%; top: 48%; animation-delay: calc(var(--decalage-corps) * 6); }
+.dragon .corpsPart7 .skin { transform: rotate(27deg); }
+
+.dragon .corpsPart8 { right: 52%; top: 40%; animation-delay: calc(var(--decalage-corps) * 7); }
+.dragon .corpsPart8 .skin { transform: rotate(30deg); }
+
+
+.dragon .corpsPart13 { right: 56%; top: 33%; animation-delay: calc(var(--decalage-corps) * 8); }
+.dragon .corpsPart13 .skin { transform: rotate(17deg); }
+
+.dragon .corpsPart14 { right: 60%; top: 30%; animation-delay: calc(var(--decalage-corps) * 9); }
+.dragon .corpsPart14 .skin { transform: rotate(2deg); }
+
+.dragon .corpsPart15 { right: 64%; top: 30%; animation-delay: calc(var(--decalage-corps) * 10); }
+.dragon .corpsPart15 .skin { transform: rotate(349deg); }
+
+.dragon .corpsPart16 { right: 68%; top: 34%; animation-delay: calc(var(--decalage-corps) * 11); }
+.dragon .corpsPart16 .skin { transform: rotate(341deg); }
+
+.dragon .corpsPart17 { right: 72%; top: 40%; animation-delay: calc(var(--decalage-corps) * 12); }
+.dragon .corpsPart17 .skin { transform: rotate(332deg); }
+
+.dragon .corpsPart18 { right: 76%; top: 47%; animation-delay: calc(var(--decalage-corps) * 13); }
+.dragon .corpsPart18 .skin { transform: rotate(327deg); }
+
+.dragon .corpsPart19 { right: 80%; top: 55%; height: 85px; animation-delay: calc(var(--decalage-corps) * 14); }
+.dragon .corpsPart19 .skin { transform: rotate(340deg); }
+
+.dragon .corpsPart20 { right: 85%; top: 61%; height: 80px; animation-delay: calc(var(--decalage-corps) * 15); }
+.dragon .corpsPart20 .skin { transform: rotate(355deg); }
+
+.dragon .corpsPart21 { right: 90.5%; top: 61%; height: 80px; animation-delay: calc(var(--decalage-corps) * 16); }
+.dragon .corpsPart21 .skin { transform: rotate(24deg); }
+
+.dragon .corpsPart22 { right: 95%; top: 53%; height: 76px; animation-delay: calc(var(--decalage-corps) * 17); }
+.dragon .corpsPart22 .skin { transform: rotate(38deg); }
+
+.dragon .corpsPart23 { right: 98%; top: 45%; height: 72px; animation-delay: calc(var(--decalage-corps) * 18); }
+.dragon .corpsPart23 .skin { transform: rotate(28deg); }
+
+.dragon .corpsPart24 { right: 102%; top: 41%; height: 61px; animation-delay: calc(var(--decalage-corps) * 19); }
+.dragon .corpsPart24 .skin { transform: rotate(7deg); }
+.dragon .tail {
+    content: '';
+    position: absolute;
+    background: linear-gradient(45deg, #c32424 57%, #aa0e0e 100%);
+    border-radius: 4px 30px 30px 4px;
+   animation: none;
+    right: -120%;
+    top: -129%;
+    transform: rotate(5deg);
+    clip-path: polygon(20% 50%, 0% 22%, 26% 38%, 2% 12%, 40% 38%, 25% 12%, 53% 38%, 45% 20%, 63% 42%, 62% 64%, 45% 80%, 53% 62%, 25% 88%, 40% 62%, 2% 88%, 26% 62%, 0% 68%, 20% 50%);
+    width: 392px;
+    height: 200px;
+
+}
+@keyframes head {
+    0%, 100% {
+
+        transform: rotate(-4deg) translateY(0px) translateX(0px);
+    }
+    35% {
+
+        transform: rotate(-20deg) translateY(-120px)translateX(-0px);
+    }
+ 50%{
+
+     transform: rotate(15deg) translateY(-25px) translateX(-25px);
+ }
+    80%{
+        transform: rotate(0deg) translateY(0px) translateX(10px);
+
+    }
+
+}
+@keyframes corps {
+    0%, 100% {
+        transform: rotate(0deg) translateY(0px)translateX(0px);
+    }
+    35% {
+        transform: rotate(-15deg) translateY(-80px) translateX(0px);
+    }
+    85% {
+        transform: rotate(15deg) translateY(-5px)translateX(20px);
+    }
+
+}
+@keyframes corpsAfter {
+    0%, 100% {
+        background: linear-gradient(180deg, #c32424 57%, #aa0e0e 100%);
+        }
+    50% {
+        background: linear-gradient(180deg, #c32424 30%, #aa0e0e 100%);
+     }
+
+
+}
+
+/*===============================NUAGE=====================*/
+.nuage {
+    position: absolute;
+    width: 529px;
+    height: 247px;
+    bottom: 4%;
+    right: -500%;
+}
+
+.nuage1 {
+    animation: nuage1 10s linear infinite;
+}
+
+.nuage2 {
+
+    animation: nuage2 10s 4s linear infinite;
+}
+
+.nuage .bulle {
+    background: #ffe9e9;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.nuage .bulle1 {
+    width: 50%;
+    height: 81%;
+    bottom: 0%;
+}
+
+.nuage .bulle2 {
+    width: 66%;
+    height: 81%;
+    bottom: 0%;
+    right: 0%;
+}
+
+.nuage .bulle3 {
+    width: 48%;
+    height: 81%;
+    top: -7%;
+    right: 23%;
+}
+
+@keyframes nuage1 {
+    0% {
+        top: 4%;
+        right: -50%;
+    }
+    20% {
+        top: 10%;
+    }
+    60% {
+        top: 4%
+    }
+    100% {
+        top: 10%;
+        right: 110%;
+    }
+
+}
+
+@keyframes nuage2 {
+    0% {
+        bottom: 4%;
+        right: -50%;
+    }
+    20% {
+        bottom: 10%;
+    }
+    60% {
+        bottom: 4%
+    }
+    100% {
+        bottom: 10%;
+        right: 110%;
+    }
+
+}

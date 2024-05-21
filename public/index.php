@@ -4,13 +4,17 @@ $router = new AltoRouter();
 
 
 $router->map( 'GET', '/', function() {
-    App\View\View::render('home',[]);
+    App\View\View::render('home',[],'day');
 
 });
 // map users details page
 $router->map( 'GET|POST', '/day/[i:id]/', function( $id ) {
-    App\View\View::render('day/cssDay'.$id,[]);
+    App\View\View::render('day/cssDay'.$id,[],'day');
 
+});
+// map users details page
+$router->map( 'GET|POST', '/other/[*:name]/', function( $name ) {
+    App\View\View::render('other/'.$name,[],'other');
 });
 
 

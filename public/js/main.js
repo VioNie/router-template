@@ -54,12 +54,12 @@ function d7search() {
 function d7menu() {
     let panel = document.querySelector('.center7')
     let menu = document.querySelector('.d7-menu')
-    if(   panel.style.left == '86%'){
+    if (panel.style.left == '86%') {
         panel.style.left = '50%'
         setTimeout(() => {
             menu.style.left = '25%'
         }, 500);
-    }else{
+    } else {
         panel.style.left = '86%'
         setTimeout(() => {
             menu.style.left = '11%'
@@ -67,8 +67,8 @@ function d7menu() {
     }
 }
 
-//=================================================== CSS DAY 7
-function d10Day(){
+//=================================================== CSS DAY 10
+function d10Day() {
     const currentDate = new Date();
     const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const monthsOfYear = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -90,4 +90,34 @@ function d10Day(){
 
     updateClock();
     setInterval(updateClock, 1000);
+}
+
+
+//=================================================== CSS DAY 13
+
+function d13plus() {
+    let overlay = document.querySelector('.d13-overlay')
+    let top = document.querySelector('.d13-overlay .top')
+    let image = document.querySelector('.d13-imageOverlay')
+    let name = document.querySelector('.d13-overlay .name')
+    let bottom = document.querySelector('.d13-overlay .bottom')
+    let parent = this.parentElement
+    const computedStyle = window.getComputedStyle(parent, '::after');
+    const backgroundImage = computedStyle.getPropertyValue('background-image');
+
+    top.style.top = '0%'
+     bottom.style.bottom = '0%'
+    image.style.top = '100%'
+    name.textContent = parent.getAttribute('data-name')
+   image.style.backgroundImage = backgroundImage
+
+}
+function d13Close(){
+    let overlay = document.querySelector('.d13-overlay')
+    let image = document.querySelector('.d13-imageOverlay')
+    let top = document.querySelector('.d13-overlay .top')
+    let bottom = document.querySelector('.d13-overlay .bottom')
+    top.style.top = '-47%'
+    bottom.style.bottom = '-57%'
+    image.style.top = '50%'
 }

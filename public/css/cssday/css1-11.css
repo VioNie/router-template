@@ -1,0 +1,1928 @@
+
+/*
+============================================================
+=====                    JOUR 1                       ======
+============================================================
+ */
+
+.frame1 {
+
+    background: linear-gradient(35deg, #433CA0 0%, #4882B5 50%, #4EC3C9 100%) !important;
+
+}
+
+
+.d1-first-title-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.d1-first-title-1__1head, .d1-first-title-1__1body, .d1-first-title-1__10, .d1-first-title-1__100 {
+
+    margin-inline: -9px;
+}
+
+.d1-first-title-1__100, .d1-first-title-1__10 {
+    width: 134px;
+    height: 134px;
+    border: 30px solid white;
+    border-radius: 50%;
+    box-shadow: #00000052 0px 0px 20px -1px;
+}
+
+.d1-first-title-1__1head {
+    z-index: 1;
+    width: 30px;
+    height: 58px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: #00000052 0px 0px 20px -1px;
+    transform-origin: center;
+    rotate: 53deg;
+    transform: translateX(-9px) translateY(11px);
+}
+
+.d1-first-title-1__1body {
+    z-index: 2;
+    width: 30px;
+    height: 134px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: #00000052 0px 0px 20px -1px;
+}
+
+.d1-first-title-1__10 {
+    z-index: 1;
+}
+
+.d1-first-title-1__100 {
+    z-index: 0;
+}
+
+.d1-second-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 800;
+    letter-spacing: 14px;
+}
+
+.d1-third-title-1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+
+
+/*
+============================================================
+=====                    JOUR 2                       ======
+============================================================
+ */
+
+.frame2 {
+    background: #d3d7cc !important;
+}
+
+.d2-burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 88px;
+    height: 68px;
+    cursor: pointer;
+}
+
+.d2-burger_bar1,
+.d2-burger_bar2,
+.d2-burger_bar3 {
+    width: 100%;
+    background: white;
+    height: 10px;
+    border-radius: 20px;
+    position: absolute;
+
+    box-shadow: #0000003b 0px 0px 10px 1px;
+    transition: top 1s, transform 0.5s ease; /* Notez le délai ajouté à la transformation */
+
+}
+
+.d2-burger_bar1 {
+    top: 0%;
+}
+
+.d2-burger_bar2 {
+    top: 50%
+}
+
+.d2-burger_bar3 {
+    top: 100%
+}
+
+
+/*
+============================================================
+=====                    JOUR 3                       ======
+============================================================
+ */
+.frame3 {
+    background: #8885a9 !important;
+}
+
+.d3-circle {
+
+    width: 181px;
+    height: 181px;
+    border-radius: 50%;
+    background: antiquewhite;
+    clip-path: border-box;
+}
+
+.d3-sky {
+    width: 100%;
+    height: 62%;
+    background: skyblue;
+    animation: d3-sky 10s infinite;
+}
+
+.d3-leftPyramide {
+    display: inline-block;
+    position: absolute;
+    top: 36%;
+    height: 48px;
+    width: 100%;
+    background: white;
+    clip-path: polygon(46% 0%, 9% 100%, 47% 100%);
+    animation: d3-rightPyramide 10s 6s infinite;
+}
+
+.d3-rightPyramide {
+    display: inline-block;
+    position: absolute;
+    top: 36%;
+    height: 48px;
+    width: 100%;
+    background: #e6e5e4;
+    clip-path: polygon(79% 100%, 46% 100%, 46% 0%);
+    animation: d3-rightPyramide 10s infinite;
+}
+
+.d3-shadow {
+    position: absolute;
+    z-index: 2;
+    top: 113px;
+    left: -80px;
+    height: 30px;
+    width: 360px;
+    background: rgba(0, 0, 0, 0.2);
+    transform-origin: 50% 0%;
+    clip-path: polygon(98px 0%, 219px 0%, 100% 100%);
+    animation: d3-shadow 10s infinite;
+}
+
+.d3-sun {
+
+    width: 100%;
+    height: 171%;
+    position: absolute;
+    top: 20%;
+    transform-origin: center;
+    animation: d3-rotation 10s ease-out infinite;
+}
+
+.d3-sun::before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    bottom: 0%;
+    right: 0%;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: inset white 0px -7px 16px 3px;
+
+}
+
+.d3-sun::after {
+    content: '';
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    top: 0%;
+    left: 0%;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: inset #eeeeee 0px -7px 0px 3px;
+
+}
+
+@keyframes d3-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes d3-sky {
+    0% {
+        background: #1c2e7c;
+    }
+    50% {
+        background: skyblue;
+    }
+    100% {
+        background: #1c2e7c;
+    }
+}
+
+@keyframes d3-rightPyramide {
+    10% {
+
+        background: #e6e5e4
+    }
+
+    20% {
+
+        background: #e6e5e4;
+    }
+
+    35% {
+        background: white;
+
+    }
+    36% {
+        background: white;
+
+    }
+    37% {
+
+        background: white;
+
+    }
+    50% {
+        background: #e6e5e4;
+    }
+    65% {
+
+        background: white;
+    }
+
+    100% {
+        background: white;
+    }
+}
+
+@keyframes d3-shadow {
+    10% {
+
+        height: 30px;
+        clip-path: polygon(98px 0%, 219px 0%, 50% 100%);
+    }
+
+    20% {
+
+        clip-path: polygon(98px 0%, 219px 0%, 5% 100%);
+    }
+
+    35% {
+
+        height: 0px;
+        clip-path: polygon(98px 0%, 219px 0%, -19% 100%);
+
+    }
+    36% {
+        height: 0px;
+        clip-path: polygon(98px 0%, 219px 0%, 113% 100%);
+
+    }
+    37% {
+
+        height: 30px;
+        clip-path: polygon(98px 0%, 219px 0%, 113% 100%);
+
+    }
+    50% {
+        height: 30px;
+        clip-path: polygon(98px 0%, 219px 0%, 5% 100%);
+    }
+    65% {
+
+        clip-path: polygon(98px 0%, 219px 0%, -19% 100%);
+    }
+
+    100% {
+        height: 0px;
+        clip-path: polygon(98px 0%, 219px 0%, -19% 100%);
+    }
+}
+
+
+/*
+============================================================
+=====                    JOUR 4                       ======
+============================================================
+ */
+
+.frame4 {
+    background: radial-gradient(#eb6c54, #ec1515);
+
+}
+
+.center4 {
+    height: 30%;
+    width: 30%;
+}
+
+.d4-round1, .d4-round2, .d4-round3 {
+
+    border-radius: 50%;
+    background: wheat;
+    box-shadow: inset white -13px 7px 9px -5px, #00000063 0px 0px 10px 2px;
+    border: white 2px solid;
+    transform-origin: center;
+    position: absolute;
+
+}
+
+.d4-round1 {
+    height: 100px;
+    width: 100px;
+    animation: d4-round1 5s infinite;
+    top: 5%;
+    left: 9%;
+}
+
+.d4-round2 {
+    height: 75px;
+    width: 75px;
+    scale: 0;
+    top: 15%;
+    left: 20%;
+
+    animation: d4-round2 5s infinite;
+}
+
+.d4-round3 {
+    height: 50px;
+    width: 50px;
+    top: 26%;
+    left: 30%;
+    scale: 0;
+    animation: d4-round3 5s infinite;
+}
+
+@keyframes d4-round1 {
+    0%, 100% {
+        scale: 0;
+    }
+    50% {
+        scale: 1;
+    }
+
+}
+
+@keyframes d4-round2 {
+    20%, 85% {
+        scale: 0;
+    }
+    50% {
+        scale: 1;
+    }
+
+}
+
+@keyframes d4-round3 {
+    30%, 70% {
+        scale: 0;
+    }
+    50% {
+        scale: 1;
+    }
+
+}
+
+
+/*
+============================================================
+=====                    JOUR 5                       ======
+============================================================
+*/
+
+.d5-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    background: #942494;
+}
+
+.d5-header span {
+
+    color: #e7e6e6;
+    font-size: .9em;
+
+}
+
+.d5-header h3 {
+    color: white;
+    font-weight: 800;
+    font-size: 1.5em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.d5-header-left {
+    text-align: left;
+}
+
+.d5-header-right {
+    text-align: end;
+}
+
+.d5-legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-block: 1em;
+}
+
+.d5-legend div {
+    margin-inline: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.d5-legend span {
+
+    color: gray;
+}
+
+.d5-legend .rect1, .d5-legend .rect2 {
+    width: 15px;
+    height: 5px;
+
+}
+
+.d5-legend .rect1 {
+    background: #4EC3C9;
+}
+
+.d5-legend .rect2 {
+    background: #8885a9;
+}
+
+.d5-grapheContainer {
+    position: relative;
+    height: 200px;
+    padding: 20px;
+}
+
+.d5-svg1, .d5-svg2 {
+    position: relative;
+    z-index: 1;
+}
+
+.d5-line1,
+.d5-line2,
+.d5-line3 {
+    width: 88%;
+    height: 2px;
+    background: #f7f2f2;
+    position: absolute;
+
+}
+
+.d5-line1 {
+    top: 25%;
+}
+
+.d5-line2 {
+
+    top: 54%;
+}
+
+.d5-line3 {
+
+    top: 85%;
+}
+
+
+.d5-svg1 .point, .d5-svg2 .point {
+    width: 7px;
+    height: 7px;
+    position: absolute;
+}
+
+.d5-svg1 .point {
+    background: #942494;
+
+}
+
+.d5-svg2 .point {
+    background: #245194;
+}
+
+.d5-svg1 .point1 {
+    top: 53%;
+    left: 2%;
+}
+
+.d5-svg1 .point2 {
+    top: 11%;
+    left: 13%;
+}
+
+.d5-svg1 .point3 {
+    top: 11%;
+    left: 35%;
+}
+
+.d5-svg1 .point4 {
+    top: 44%;
+    left: 47%;
+}
+
+.d5-svg1 .point5 {
+    top: 56%;
+    left: 58%;
+
+}
+
+.d5-svg1 .point6 {
+    top: 20%;
+    left: 69%;
+
+}
+
+.d5-svg1 .point7 {
+    top: 59%;
+    left: 74%;
+}
+
+.d5-svg1 .point8 {
+    top: 9%;
+    left: 87%;
+}
+
+.d5-svg1 .point9 {
+    top: 26%;
+    left: 24%;
+
+}
+
+.d5-svg2 .point1 {
+    top: 55%;
+    left: 2%;
+}
+
+.d5-svg2 .point2 {
+    top: 12%;
+    left: 13%;
+}
+
+.d5-svg2 .point3 {
+    top: 25%;
+    left: 24%;
+}
+
+.d5-svg2 .point4 {
+    top: 11%;
+    left: 35%;
+}
+
+.d5-svg2 .point5 {
+    top: 43%;
+    left: 47%;
+
+}
+
+.d5-svg2 .point6 {
+    top: 55%;
+    left: 58%;
+}
+
+.d5-svg2 .point7 {
+    top: 19%;
+    left: 69%;
+}
+
+.d5-svg2 .point8 {
+    top: 58%;
+    left: 74%;
+}
+
+.d5-svg2 .point9 {
+    top: 7%;
+    left: 87%;
+}
+
+.d5-axeY {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: uppercase;
+    color: #a7a3a3;
+    font-size: 0.8em;
+}
+
+/*
+============================================================
+=====                    JOUR 6                       ======
+============================================================
+*/
+
+.frame6 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.d6-body {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-block: 26px;
+    align-items: center;
+    background: #fffcf6;
+}
+
+.d6-body img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.d6-imageRound1 {
+    content: '';
+    position: absolute;
+    top: -8%;
+    left: -6%;
+    width: 115%;
+    height: 115%;
+    border-style: solid;
+
+    border-width: 1px;
+    border-color: #5a5449 #5a5449 #5a5449 transparent;
+    border-radius: 50%;
+    transition: all 1.5s ease-out;
+}
+
+.d6-imageRound2 {
+    content: '';
+    position: absolute;
+    top: -12%;
+    left: -11%;
+    width: 124%;
+    height: 124%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #5a5449 transparent #5a5449 #5a5449;
+    border-radius: 50%;
+
+    transition: all 1.5s ease-out;
+}
+
+.d6-imageContainer:hover .d6-imageRound1 {
+    transform: rotate(360deg);
+}
+
+.d6-imageContainer:hover .d6-imageRound2 {
+
+    transform: rotate(-360deg);
+}
+
+.d6-body div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d6-body h1 {
+
+    font-size: 1.3em;
+
+    color: #5a5449;
+    font-weight: 600;
+    margin: 0;
+}
+
+.d6-body span {
+
+    color: #7a634c;
+}
+
+.d6-body button {
+    outline: 0;
+    border: 2px solid #5a5449;
+    font-size: 1.2em;
+    color: #5a5449;
+    border-radius: 21px;
+    background: transparent;
+    width: 145px;
+    font-weight: 600;
+    transition: background-color 0.5s;
+    margin-block: 6px;
+}
+
+.d6-body button:hover {
+    background: #5a5449;
+    color: white;
+}
+
+.d6-aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: wheat;
+}
+
+.d6-aside div {
+    width: 100%;
+    height: 33%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.d6-aside div:hover {
+    background: #e4c4a5;
+}
+
+.d6-aside h1 {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #5a5449;
+    margin: 0;
+}
+
+.d6-aside span {
+
+    font-size: 1em;
+    font-weight: 500;
+    color: #827d73;
+}
+
+
+/*
+============================================================
+=====                    JOUR 7                       ======
+============================================================
+*/
+.frame7 {
+    background: aliceblue;
+
+}
+
+.center7 {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    transition: left 1s ease-in;
+}
+
+.d7-header {
+    background: #5F98CD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.d7-header:hover i {
+
+
+    color: white;
+}
+
+.d7-header i {
+
+    cursor: pointer;
+    color: #B2DAFF;
+    font-size: 1.5em;
+    transition: all 0.2s ease-in;
+}
+
+.d7-header span {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+.d7-iconMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 22px;
+    cursor: pointer;
+}
+
+.d7-searchbar {
+    display: block;
+    border-radius: 21px;
+    border: 0;
+    outline: 0;
+    padding: 0px;
+    background: white;
+    font-size: 0.8em;
+    height: 35px;
+    width: 0px;
+    position: absolute;
+    right: 16%;
+    transition: all 1s;
+}
+
+.d7-iconMenu:hover .d7-bottombar, .d7-iconMenu:hover .d7-topbar, .d7-iconMenu:hover .d7-topbar:after {
+    background: white;
+}
+
+.d7-bottombar, .d7-topbar {
+    width: 30px;
+    height: 3px;
+    position: relative;
+    background: #B2DAFF;
+    border-radius: 20px;
+    transition: all 0.2s ease-in;
+}
+
+.d7-topbar:after {
+    content: '';
+    position: absolute;
+    right: -11%;
+    top: -132%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #B2DAFF;
+    border: 2px solid #5F98CD;
+    transition: all 0.5s ease-in;
+}
+
+.d7-body {
+    background: white;
+    padding: 20px 20px 20px 56px;
+    position: relative;
+    height: 100%;
+}
+
+.d7-line {
+    height: 92%;
+    position: absolute;
+    width: 5px;
+    top: 0%;
+    left: 12%;
+    background: #e7e7e7;
+    border-radius: 0px 0px 42px 40px;
+}
+
+.d7-notif {
+    position: relative;
+    cursor: pointer;
+}
+
+.d7-notif:hover {
+    color: #5F98CD;
+}
+
+.d7-point {
+    position: absolute;
+    top: 2%;
+    left: -9%;
+    height: 15px;
+    width: 15px;
+    background: #5F98CD;
+    border-radius: 50%;
+    border: 2px solid #B2DAFF;
+}
+
+.d7-menu {
+    height: 74%;
+    width: 150px;
+    background: #92bdf4;
+    position: absolute;
+    left: 20%;
+    top: 13%;
+    transition: all 1s;
+}
+
+.d7-menu i {
+    margin-right: 9px;
+}
+
+.d7-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.d7-menu li {
+    padding: 18px 16px;
+    color: #1e4364;
+    font-size: .9em;
+}
+
+.d7-menu li:hover {
+    background: #8eb6e7;
+}
+
+/*
+============================================================
+=====                    JOUR 8                       ======
+============================================================
+*/
+
+
+.frame8 {
+    background: black;
+}
+
+.center8 {
+    height: 20%;
+    width: 20%;
+
+}
+
+.d8-ball {
+    width: 79px;
+    height: 79px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(1px);
+}
+
+.d8-blubb {
+    width: 69px;
+    height: 69px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(1px);
+}
+
+.d8-blubb:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 19%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.d8-blubb-1 {
+    animation: d8-blubb 10s 0s infinite;
+}
+
+.d8-blubb-2 {
+    animation: d8-blubb2 10s 1s infinite;
+}
+
+.d8-blubb-3 {
+    animation: d8-blubb 10s 2s infinite;
+}
+
+.d8-blubb-4 {
+    animation: d8-blubb2 10s 3s infinite;
+}
+
+.d8-blubb-5 {
+    animation: d8-blubb 10s 4s infinite;
+}
+
+.d8-blubb-6 {
+    animation: d8-blubb2 10s 5s infinite;
+}
+
+.d8-blubb-7 {
+    animation: d8-blubb 10s 6s infinite;
+}
+
+.d8-blubb-8 {
+    animation: d8-blubb2 10s 7s infinite;
+}
+
+.d8-sparkle {
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+
+    animation: d8-sparkle 10s infinite;
+}
+
+.d8-sparkle:after {
+    content: '';
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+
+    animation: d8-sparkle-after 10s infinite;
+}
+
+.d8-sparkle-1 {
+    animation: d8-sparkle 10s infinite;
+}
+
+.d8-sparkle-1:after {
+    animation: d8-sparkle-after 10s infinite;
+    height: 5px;
+    width: 5px;
+}
+
+.d8-sparkle-2 {
+    animation: d8-sparkle2 10s 1s infinite;
+}
+
+.d8-sparkle-2:after {
+    animation: d8-sparkle-after 10s 1s infinite;
+}
+
+.d8-sparkle-3 {
+    animation: d8-sparkle 10s 2s infinite;
+}
+
+.d8-sparkle-3:after {
+    height: 10px;
+    width: 10px;
+    animation: d8-sparkle-after 10s 2s infinite;
+}
+
+.d8-sparkle-4 {
+    animation: d8-sparkle2 10s 3s infinite;
+}
+
+.d8-sparkle-4:after {
+    height: 19px;
+    width: 19px;
+    animation: d8-sparkle-after 10s 3s infinite;
+}
+
+.d8-sparkle-5 {
+    animation: d8-sparkle 10s 4s infinite;
+}
+
+.d8-sparkle-5:after {
+    height: 13px;
+    width: 13px;
+    animation: d8-sparkle-after 10s 4s infinite;
+}
+
+.d8-sparkle-6 {
+    animation: d8-sparkle2 10s 5s infinite;
+}
+
+.d8-sparkle-6:after {
+    height: 10px;
+    width: 10px;
+    animation: d8-sparkle-after 10s 5s infinite;
+}
+
+.d8-sparkle-7 {
+
+    animation: d8-sparkle 10s 6s infinite;
+}
+
+.d8-sparkle-7:after {
+    height: 15px;
+    width: 15px;
+    animation: d8-sparkle-after 10s 6s infinite;
+}
+
+.d8-sparkle-8 {
+    animation: d8-sparkle2 10s 7s infinite;
+}
+
+.d8-sparkle-8:after {
+    animation: d8-sparkle-after 10s 7s infinite;
+}
+
+.d8-sparkle-9 {
+    animation: d8-sparkle 10s 8s infinite;
+}
+
+.d8-sparkle-9:after {
+    animation: d8-sparkle-after 10s 8s infinite;
+}
+
+.d8-sparkle-10 {
+    animation: d8-sparkle2 10s 9s infinite;
+}
+
+.d8-sparkle-10:after {
+    animation: d8-sparkle-after 10s 9s infinite;
+}
+
+
+@keyframes d8-blubb {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    20% {
+        transform: translate(10px, 10px);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(360deg);
+    }
+}
+
+@keyframes d8-blubb2 {
+    0% {
+        transform: translate(0px, 0px) rotate(360deg);
+    }
+    50% {
+        transform: translate(10px, 10px);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+@keyframes d8-sparkle {
+    0%, 100% {
+
+        transform: rotate(0deg);
+    }
+
+    99% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes d8-sparkle-after {
+    0%, 100% {
+        top: 0%;
+    }
+    50% {
+        top: -250%
+    }
+}
+
+@keyframes d8-sparkle2 {
+    0%, 100% {
+
+        transform: rotate(360deg);
+    }
+
+    99% {
+        transform: rotate(0deg);
+    }
+}
+
+/*
+============================================================
+=====                    JOUR 9                       ======
+============================================================
+*/
+
+.frame9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #394568;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+
+/*=====MOUNT */
+.d9-mount {
+    width: 169px;
+    height: 169px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -18%;
+    left: 0%;
+}
+
+.d9-mount-1 {
+    width: 219px;
+    height: 169px;
+    bottom: -29%;
+    left: -11%;
+}
+
+.d9-mount-2 {
+    width: 230px;
+
+    bottom: -26%;
+    left: 32%;
+}
+
+.d9-mount-3 {
+    bottom: -33%;
+    left: 83%;
+}
+
+.d9-mount-4 {
+    width: 238px;
+    height: 145px;
+    bottom: -7%;
+    left: -1%;
+}
+
+.d9-mount-5 {
+    width: 238px;
+    height: 145px;
+    bottom: -12%;
+    left: 61%;
+}
+
+.d9-mount-1, .d9-mount-2, .d9-mount-3 {
+    background: #303C5D;
+    z-index: 2;
+}
+
+.d9-mount-4, .d9-mount-5 {
+    background: #26314F;
+    z-index: 1;
+
+}
+
+/*=====MOON */
+.d9-moon {
+
+    background: #F6EDBD;
+    height: 88px;
+    width: 88px;
+    filter: drop-shadow(0px 0px 6px #f1ecd3);
+    position: absolute;
+    border-radius: 50%;
+    top: 10%;
+    left: 10%;
+}
+
+.d9-moon .point {
+    background: #ECE1A8;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(1px);
+
+    box-shadow: inset 0px 0px 1px #e4d794;
+
+}
+
+.d9-point1 {
+    width: 13px;
+    height: 12px;
+    top: 21%;
+    left: 32%;
+}
+
+.d9-point2 {
+    width: 5px;
+    height: 6px;
+    top: 42%;
+    left: 10%;
+
+}
+
+.d9-point3 {
+    width: 5px;
+    height: 5px;
+    top: 68%;
+    left: 13%;
+}
+
+.d9-point4 {
+    width: 9px;
+    height: 7px;
+    top: 62%;
+    left: 64%;
+
+}
+
+.d9-point5 {
+    width: 5px;
+    height: 5px;
+    top: 68%;
+    left: 82%;
+}
+
+.d9-point6 {
+    width: 8px;
+    height: 6px;
+    top: 82%;
+    left: 50%;
+
+}
+
+.d9-point7 {
+    width: 5px;
+    height: 6px;
+    top: 29%;
+    left: 70%;
+
+}
+
+.d9-point8 {
+    width: 5px;
+    height: 5px;
+    top: 49%;
+    left: 39%;
+
+}
+
+.d9-point9 {
+    width: 5px;
+    height: 7px;
+    top: 74%;
+    left: 32%;
+}
+
+
+.d9-point10 {
+    width: 13px;
+    height: 5px;
+    top: 5%;
+    left: 59%;
+
+}
+
+/*=====RAIN */
+.d9-drop {
+    width: 8px;
+    height: 13px;
+    position: absolute;
+    border-radius: 50%;
+    top: -4%; /*-4%*/
+    left: 10%;
+    background: #7FC1F9;
+    transform: translateX(0%) rotate(20deg);
+    z-index: 3;
+}
+
+.d9-drop:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -6px;
+    left: -1px;
+    height: 10px;
+    width: 13px;
+    clip-path: polygon(37% 0%, 10% 100%, 70% 107%);
+    background: #7FC1F9;
+}
+
+.d9-drop1 {
+    left: 15%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.d9-drop2 {
+    left: 22.08%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+.d9-drop3 {
+    left: 29.16%;
+    animation: d9-drop 0.8s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+
+.d9-drop4 {
+    left: 36.24%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+
+.d9-drop5 {
+    left: 43.32%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+
+.d9-drop6 {
+    left: 50.40%;
+    animation: d9-drop 0.7s ease-in-out infinite;
+    animation-delay: 0.7s;
+}
+
+
+.d9-drop7 {
+    left: 57.48%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 1.3s;
+}
+
+.d9-drop8 {
+    left: 64.56%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 1.6s;
+}
+
+.d9-drop9 {
+    left: 71.64%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+.d9-drop10 {
+    left: 78.72%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+
+.d9-drop11 {
+    left: 85.80%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 1.9s;
+}
+
+
+.d9-drop12 {
+    left: 92.88%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+
+.d9-drop13 {
+    left: 100%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 2.5s;
+}
+
+
+.d9-dropMedium {
+    width: 5px;
+    height: 7px;
+    position: absolute;
+    border-radius: 50%;
+    top: -4%;
+    left: 10%;
+    background: #7391a9;
+    transform: translateX(0%) rotate(20deg);
+    z-index: 3;
+}
+
+.d9-dropMedium:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -3px;
+    left: -1px;
+    height: 6px;
+    width: 9px;
+    clip-path: polygon(37% 0%, 10% 100%, 70% 107%);
+    background: #7391a9;
+}
+
+.d9-dropMedium1 {
+    left: 10%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.d9-dropMedium1::after {
+    animation: d9-drop-after 1s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.d9-dropMedium2 {
+    left: 17.08%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+
+.d9-dropMedium3 {
+    left: 24.16%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+
+.d9-dropMedium4 {
+    left: 31.24%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+
+.d9-dropMedium5 {
+    left: 38.32%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+
+.d9-dropMedium6 {
+    left: 45.40%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+
+.d9-dropMedium7 {
+    left: 52.48%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+
+.d9-dropMedium8 {
+    left: 59.56%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.7s;
+}
+
+
+.d9-dropMedium9 {
+    left: 66.64%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+.d9-dropMedium10 {
+    left: 73.72%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+
+.d9-dropMedium11 {
+    left: 80.80%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+
+.d9-dropMedium12 {
+    left: 83.88%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+
+.d9-drop13 {
+    left: 95%;
+    animation: d9-drop 1s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+
+/*=====INFORMATIONS */
+.d9-weatherInformations {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+.d9-weatherInformations span {
+    font-size: 15px;
+}
+
+.d9-weatherAnimation {
+    height: 80%;
+    background: #1A2238;
+    position: relative;
+    clip-path: border-box;
+    z-index: 0;
+}
+
+@keyframes d9-drop {
+    0% {
+        top: -4%;
+
+    }
+    100% {
+
+        top: 104%;
+        transform: translateX(-400%) rotate(0deg);
+    }
+
+}
+
+
+/*
+============================================================
+=====                    JOUR 10                       ======
+============================================================
+*/
+.frame10 {
+    background: #4a4946;
+}
+
+.center10 {
+    width: 66%;
+    height: 66%;
+    background: #4a4946;
+    border-radius: 50%;
+    box-shadow: 6px 6px 12px #3c3b39,
+    -6px -6px 12px #585753;
+}
+
+.d10-ringContainer {
+    width: 93%;
+    height: 93%;
+    border-radius: 50%;
+    clip-path: border-box;
+    position: relative;
+
+}
+
+.d10-ring {
+    height: 150%;
+    width: 150%;
+    clip-path: polygon(100% 0%, 100% 0%, 50% 0%, 50% 50%, 50% 0%);
+
+    background: linear-gradient(90deg, #D49941 2.2%, #D49941 19%, #FAE167 35.31%, #F7F2BA 50.18%, #FAE167 66.49%, #D49941 81.84%, #D49941 98.16%);
+
+    animation: d10-ring 10s linear infinite;
+}
+
+.d10-innerClock {
+    width: 95%;
+    height: 95%;
+    background: #4a4946;
+    border-radius: 50%;
+    animation: d10-innerclock 60s linear infinite;
+}
+
+@keyframes d10-ring {
+    0% {
+        clip-path: polygon(100% 0%, 100% 0%, 50% 0%, 50% 50%, 50% 0%);
+    }
+    12.5% {
+        clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 50% 50%, 50% 0%);
+    }
+
+
+    37.5% {
+        clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 50% 50%, 50% 0%);
+    }
+
+
+    50% {
+        clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 50% 50%, 50% 0%);
+    }
+    50.00001% {
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, -1% 0%, 0% 10000%, 50% 50%, 50% 0%);
+    }
+    62.5% {
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%, 0% 100%, 50% 50%, 50% 0%);
+    }
+
+
+    75% {
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%, 1% 0%, 50% 50%, 50% 0%);
+    }
+    100% {
+        clip-path: polygon(100% 0%,
+        100% 100%,
+        0% 100%,
+        0% 0%,
+        50% 0%,
+        50% 50%,
+        50% 0%);
+    }
+
+
+}
+
+.d10-innerClock .points {
+    width: 100%;
+    height: 100%;
+}
+
+.d10-innerClock .point {
+    width: 3px;
+    height: 3px;
+    background: #ffc67b;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.d10-innerClock .point1 {
+    top: 4%;
+    left: 50%;
+}
+
+.d10-innerClock .point2 {
+    top: 50%;
+    left: 4%;
+}
+
+.d10-innerClock .point3 {
+    bottom: 4%;
+    left: 50%;
+}
+
+.d10-innerClock .point4 {
+    right: 4%;
+    top: 50%;
+}
+
+.d10-points2 {
+    transform: translate(-50%, -50%) rotate(9deg);
+}
+
+.d10-points3 {
+    transform: translate(-50%, -50%) rotate(18deg);
+}
+
+.d10-points4 {
+    transform: translate(-50%, -50%) rotate(27deg);
+}
+
+.d10-points5 {
+    transform: translate(-50%, -50%) rotate(36deg);
+}
+
+.d10-points6 {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.d10-points7 {
+    transform: translate(-50%, -50%) rotate(54deg);
+}
+
+.d10-points8 {
+    transform: translate(-50%, -50%) rotate(63deg);
+}
+
+.d10-points9 {
+    transform: translate(-50%, -50%) rotate(72deg);
+}
+
+.d10-points10 {
+    transform: translate(-50%, -50%) rotate(81deg);
+}
+
+@keyframes d10-innerclock {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+}
+
+.d10-data {
+    z-index: 30;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    color: #ffd092;
+
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.d10-dataText {
+    font-size: 1em;
+
+}
+
+.d10-bi:before {
+    animation: d10-scale 2s linear infinite;
+}
+
+@keyframes d10-scale {
+    0%, 100% {
+        scale: 100%;
+    }
+    50% {
+        scale: 120%
+    }
+
+}
+
+/*
+============================================================
+=====                    JOUR 11                       ======
+============================================================
+*/
+.frame11 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.d11-sky {
+    height: 70%;
+    position: relative;
+    background: radial-gradient(#dfc29d, #af955d);
+}
+
+.d11-ground {
+    height: 30%;
+
+    background: url("/image/sol.png");
+    background-repeat: repeat;
+    background-position: left;
+    animation: d11-ground 3s linear infinite;
+}
+
+.d11-shoe {
+    width: 167px;
+    height: 167px;
+    position: absolute;
+
+    background: url('https://100dayscss.com/codepen/doc-martens.svg') center center no-repeat;
+}
+
+.d11-shoe1 {
+    bottom: 0%;
+    left: 5%;
+    transform: rotate(25deg);
+    animation: d11-1 2s ease-in-out infinite;
+}
+
+.d11-shoe2 {
+    bottom: -3%;
+    left: 58%;
+    transform: rotate(-7deg);
+    animation: d11-2 2s ease-in-out infinite;
+}
+
+@keyframes d11-1 {
+    0%, 100% {
+        bottom: 0%;
+        left: 5%;
+        transform: rotate(35deg);
+    }
+
+    30% {
+        bottom: 3%;
+        left: 58%;
+        transform: rotate(-9deg);
+
+    }
+    40% {
+        bottom: -7%;
+        left: 48%;
+        transform: rotate(2deg);
+    }
+    80% {
+        bottom: -7%;
+        left: 20%;
+        transform: rotate(2deg);
+    }
+
+}
+
+@keyframes d11-2 {
+    0%, 100% {
+        bottom: -5%;
+        left: 58%;
+        transform: rotate(-9deg);
+    }
+    10% {
+        bottom: -7%;
+        left: 45%;
+        transform: rotate(-1deg);
+    }
+    25% {
+        bottom: -7%;
+        left: 20%;
+        transform: rotate(-1deg);
+
+    }
+    45% {
+        bottom: 0%;
+        left: 5%;
+        transform: rotate(35deg);;
+    }
+
+}
+
+@keyframes d11-ground {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+

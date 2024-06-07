@@ -21,6 +21,7 @@
                     </a>
                     <ul class="dropdown-menu">
                              <li><a class="dropdown-item" href="/other/chinese-dragon/">Chinese Dragon</a></li>
+                             <li><a class="dropdown-item" href="/other/fuji/">Mont Fuji</a></li>
 
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>

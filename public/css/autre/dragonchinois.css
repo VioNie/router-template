@@ -1,6 +1,9 @@
 :root {
-    --animation-corps: 10s;
-    --decalage-corps: 0.2s
+    --animation-corps: 8s;
+    --decalage-corps: 0.2s;
+    --mount2: #d45379;
+    --mount: #e46582;
+--brown2:#cf4b4b ;
 }
 
 .dragonBackground {
@@ -9,21 +12,10 @@
     background: linear-gradient(156deg, #fa8881, #F2DAAF);
 }
 
-.dragonBackground .round {
-    width: 1000px;
-    height: 1000px;
-    background: #FF3529;
-    box-shadow: 10px 10px 20px 2px #ee645b;
-    border-radius: 50%;
-    position: absolute;
-    top: -29%;
-    left: -4%;
 
-}
-
-.dragon {
+.dragonBackground  .dragon {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 0%;
     width: 1382px;
     height: 372px;
@@ -31,10 +23,100 @@
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    z-index: 1;
 }
 
+/*===============================BACKGROUND=====================*/
+
+.dragonBackground .round {
+    width: 300px;
+    height: 300px;
+    background: #FF3529;
+    box-shadow: 10px 10px 20px 2px #ee645b;
+    border-radius: 50%;
+    position: absolute;
+    top: 6%;
+    left: 34%;
+    z-index: 0;
+
+}
+
+.dragonBackground  .mounts {
+    width: 100%;
+    height: 62%;
+    position: absolute;
+    bottom: 0%;
+}
+
+.dragonBackground  .mount {
+    width: 400px;
+    height: 439px;
+    position: absolute;
+    bottom: 0;
+z-index: 1;
+    border-radius: 67px;
+    transform: rotate(45deg);
+}
+
+.dragonBackground  .mount1 {
+    background: var(--mount2);
+    left: 11%;
+    bottom: -5%;
+}
+
+.dragonBackground  .mount2 {
+
+    background: var(--mount);
+    left: -1%;
+    bottom: -27%;
+}
+
+.dragonBackground  .mount3 {
+
+    background: var(--mount);
+    left: 21%;
+    bottom: -29%;
+}
+.dragonBackground  .mount4 {
+
+    background: var(--mount);
+    left: 37%;
+    bottom: -39%;
+}
+.dragonBackground  .mount5 {
+
+    background: var(--mount);
+    left: 57%;
+    bottom: -52%;
+}
+.dragonBackground  .mount6 {
+
+    background: var(--mount2);
+    left: 68%;
+    bottom: -38%;
+}
+.dragonBackground  .mount7 {
+    width: 400px;
+    height: 515px;
+    background: var(--mount);
+    left: 82%;
+    bottom: -41%;
+}
+.dragonBackground  .mount8 {
+    background: var(--brown2);
+    left: 35%;
+    bottom: -17%;
+}.dragonBackground  .mount9 {
+     background: var(--brown2);
+     left: 54%;
+     bottom: -25%;
+}.dragonBackground  .mount10 {
+      background: var(--brown2);
+      left: 76%;
+      bottom: -1%;
+}
 /*===============================HEAD=====================*/
-.head {
+.dragonBackground  .head {
     width: 162px;
     height: 68px;
     background: #c32424;
@@ -47,7 +129,7 @@
     animation: head var(--animation-corps) linear infinite;
 }
 
-.head:after {
+.dragonBackground .head:after {
     content: '';
     width: 51%;
     height: 25px;
@@ -58,7 +140,7 @@
 
 }
 
-.eye {
+.dragonBackground  .eye {
     width: 17px;
     height: 10px;
     border-radius: 50%;
@@ -69,7 +151,7 @@
     z-index: 1;
 }
 
-.eye:after {
+.dragonBackground  .eye:after {
     content: '';
     width: 10px;
     height: 5px;
@@ -81,7 +163,7 @@
     animation: eye 5s infinite;
 }
 
-.mouth {
+.dragonBackground  .mouth {
     background: white;
     width: 50%;
     position: absolute;
@@ -90,7 +172,7 @@
     right: 0%;
 }
 
-.horn {
+.dragonBackground  .horn {
     width: 90%;
     height: 59px;
     background: #7a0f0f;
@@ -103,7 +185,7 @@
     transform-origin: right;
 }
 
-.moustache {
+.dragonBackground  .moustache {
     width: 90%;
     height: 33px;
     background: #f2e74e;
@@ -119,7 +201,7 @@
     animation: moustache 5s ease-in-out infinite;
 }
 
-.tache {
+.dragonBackground  .tache {
     position: absolute;
     width: 19px;
     height: 8px;
@@ -128,41 +210,41 @@
 
 }
 
-.skin .tache {
+.dragonBackground  .skin .tache {
     background: #8e1f1f;
     width: 14px !important;
 }
 
-.taches .tache1 {
+.dragonBackground  .taches .tache1 {
 
     right: 12%;
 }
 
-.taches .tache2 {
+.dragonBackground  .taches .tache2 {
     right: 26%;
     width: 10px;
     height: 5px;
 }
 
-.taches .tache3 {
+.dragonBackground  .taches .tache3 {
     right: 35%;
 }
 
-.taches .tache4 {
+.dragonBackground  .taches .tache4 {
     transform: rotate(180deg);
     bottom: 0%;
     height: 5px;
     right: 12%;
 }
 
-.taches .tache5 {
+.dragonBackground  .taches .tache5 {
     transform: rotate(180deg);
     bottom: 0%;
     height: 5px;
     right: 28%;
 }
 
-.taches .tache6 {
+.dragonBackground  .taches .tache6 {
     transform: rotate(180deg);
     bottom: 0%;
     height: 5px;
@@ -170,14 +252,14 @@
 }
 
 
-.skin .tache5 {
+.dragonBackground  .skin .tache5 {
     transform: rotate(180deg);
     bottom: 0%;
     height: 5px;
     right: 50%;
 }
 
-.skin .tache6 {
+.dragonBackground  .skin .tache6 {
     transform: rotate(180deg);
     bottom: 0%;
     height: 5px;
@@ -203,20 +285,20 @@
 }
 
 /*===============================CORPS=====================*/
-.corps {
+.dragonBackground  .corps {
     width: 80%;
     height: 89%;
     position: relative;
 }
 
-.dragon .corpsPart {
+.dragonBackground .dragon .corpsPart {
     width: 70px;
     height: 90px;
     position: absolute;
     animation: corps var(--animation-corps) linear infinite;
 }
 
-.dragon .corpsPart .skin {
+.dragonBackground  .dragon .corpsPart .skin {
     content: '';
     height: 100%;
     width: 100%;
@@ -226,7 +308,7 @@
     animation: corpsAfter var(--animation-corps) linear infinite;
 }
 
-.corpsPart .ecaille {
+.dragonBackground  .corpsPart .ecaille {
 
     width: 20px;
     height: 20px;
@@ -239,41 +321,41 @@
 }
 
 
-.corpsPart .ecaille1 {
+.dragonBackground  .corpsPart .ecaille1 {
     left: 30%;
     top: 0%;
 
 }
 
-.corpsPart .ecaille2 {
+.dragonBackground  .corpsPart .ecaille2 {
     left: 61%;
     top: 21%;
 }
 
-.corpsPart .ecaille3 {
+.dragonBackground  .corpsPart .ecaille3 {
     left: 57%;
     top: -1%;
 }
 
-.corpsPart .ecaille4 {
+.dragonBackground  .corpsPart .ecaille4 {
     left: 7%;
     top: 1%;
 
 }
 
-.corpsPart .ecaille5 {
+.dragonBackground  .corpsPart .ecaille5 {
     left: 7%;
     top: 24%;
 
 }
 
-.corpsPart .ecaille6 {
+.dragonBackground  .corpsPart .ecaille6 {
     left: 33%;
     top: 23%;
 
 }
 
-.meche {
+.dragonBackground  .meche {
     animation: meche var(--animation-corps) linear infinite;
     width: 80%;
     height: 175px;
@@ -284,224 +366,224 @@
     clip-path: polygon(26% 16%, 54% 92%, 81% 10%, 100% 32%, 100% 35%, 81% 14%, 54% 100%, 27% 24%, 0 52%);
 }
 
-.meche1 {
+.dragonBackground  .meche1 {
     transform: rotate(34deg);
     /* z-index: -1; */
     right: 13%;
     top: 40%;
 }
 
-.meche2 {
+.dragonBackground  .meche2 {
     transform: rotate(34deg);
     /* z-index: -1; */
     right: 13%;
     top: 35%;
 }
 
-.dragon .corpsPart1 {
+.dragonBackground  .dragon .corpsPart1 {
     right: 20%;
     top: 40%;
     animation-delay: calc(var(--decalage-corps) * 0)
 }
 
-.dragon .corpsPart2 {
+.dragonBackground  .dragon .corpsPart2 {
     right: 24%;
     top: 44%;
     animation-delay: calc(var(--decalage-corps) * 1);
 }
 
-.dragon .corpsPart2 .skin {
+.dragonBackground  .dragon .corpsPart2 .skin {
     transform: rotate(353deg);
 }
 
-.dragon .corpsPart3 {
+.dragonBackground  .dragon .corpsPart3 {
     right: 28%;
     top: 47%;
     animation-delay: calc(var(--decalage-corps) * 2);
 }
 
-.dragon .corpsPart3 .skin {
+.dragonBackground  .dragon .corpsPart3 .skin {
     transform: rotate(342deg);
 }
 
-.dragon .corpsPart4 {
+.dragonBackground  .dragon .corpsPart4 {
     right: 33%;
     top: 52%;
     animation-delay: calc(var(--decalage-corps) * 3);
 }
 
-.dragon .corpsPart4 .skin {
+.dragonBackground  .dragon .corpsPart4 .skin {
     transform: rotate(346deg);
 }
 
-.dragon .corpsPart5 {
+.dragonBackground  .dragon .corpsPart5 {
     right: 38%;
     top: 55%;
     animation-delay: calc(var(--decalage-corps) * 4);
 }
 
-.dragon .corpsPart5 .skin {
+.dragonBackground  .dragon .corpsPart5 .skin {
     transform: rotate(359deg);
 }
 
-.dragon .corpsPart6 {
+.dragonBackground  .dragon .corpsPart6 {
     right: 43%;
     top: 54%;
     animation-delay: calc(var(--decalage-corps) * 5);
 }
 
-.dragon .corpsPart6 .skin {
+.dragonBackground  .dragon .corpsPart6 .skin {
     transform: rotate(15deg);
 }
 
-.dragon .corpsPart7 {
+.dragonBackground  .dragon .corpsPart7 {
     right: 48%;
     top: 48%;
     animation-delay: calc(var(--decalage-corps) * 6);
 }
 
-.dragon .corpsPart7 .skin {
+.dragonBackground  .dragon .corpsPart7 .skin {
     transform: rotate(27deg);
 }
 
-.dragon .corpsPart8 {
+.dragonBackground  .dragon .corpsPart8 {
     right: 52%;
     top: 40%;
     animation-delay: calc(var(--decalage-corps) * 7);
 }
 
-.dragon .corpsPart8 .skin {
+.dragonBackground  .dragon .corpsPart8 .skin {
     transform: rotate(30deg);
 }
 
 
-.dragon .corpsPart13 {
+.dragonBackground  .dragon .corpsPart13 {
     right: 56%;
     top: 33%;
     animation-delay: calc(var(--decalage-corps) * 8);
 }
 
-.dragon .corpsPart13 .skin {
+.dragonBackground  .dragon .corpsPart13 .skin {
     transform: rotate(17deg);
 }
 
-.dragon .corpsPart14 {
+.dragonBackground  .dragon .corpsPart14 {
     right: 60%;
     top: 30%;
     animation-delay: calc(var(--decalage-corps) * 9);
 }
 
-.dragon .corpsPart14 .skin {
+.dragonBackground  .dragon .corpsPart14 .skin {
     transform: rotate(2deg);
 }
 
-.dragon .corpsPart15 {
+.dragonBackground  .dragon .corpsPart15 {
     right: 64%;
     top: 30%;
     animation-delay: calc(var(--decalage-corps) * 10);
 }
 
-.dragon .corpsPart15 .skin {
+.dragonBackground  .dragon .corpsPart15 .skin {
     transform: rotate(349deg);
 }
 
-.dragon .corpsPart16 {
+.dragonBackground  .dragon .corpsPart16 {
     right: 68%;
     top: 34%;
     animation-delay: calc(var(--decalage-corps) * 11);
 }
 
-.dragon .corpsPart16 .skin {
+.dragonBackground  .dragon .corpsPart16 .skin {
     transform: rotate(341deg);
 }
 
-.dragon .corpsPart17 {
+.dragonBackground  .dragon .corpsPart17 {
     right: 72%;
     top: 40%;
     animation-delay: calc(var(--decalage-corps) * 12);
 }
 
-.dragon .corpsPart17 .skin {
+.dragonBackground  .dragon .corpsPart17 .skin {
     transform: rotate(332deg);
 }
 
-.dragon .corpsPart18 {
+.dragonBackground  .dragon .corpsPart18 {
     right: 76%;
     top: 47%;
     animation-delay: calc(var(--decalage-corps) * 13);
 }
 
-.dragon .corpsPart18 .skin {
+.dragonBackground  .dragon .corpsPart18 .skin {
     transform: rotate(327deg);
 }
 
-.dragon .corpsPart19 {
+.dragonBackground  .dragon .corpsPart19 {
     right: 80%;
     top: 55%;
     height: 85px;
     animation-delay: calc(var(--decalage-corps) * 14);
 }
 
-.dragon .corpsPart19 .skin {
+.dragonBackground  .dragon .corpsPart19 .skin {
     transform: rotate(340deg);
 }
 
-.dragon .corpsPart20 {
+.dragonBackground  .dragon .corpsPart20 {
     right: 85%;
     top: 61%;
     height: 80px;
     animation-delay: calc(var(--decalage-corps) * 15);
 }
 
-.dragon .corpsPart20 .skin {
+.dragonBackground  .dragon .corpsPart20 .skin {
     transform: rotate(355deg);
 }
 
-.dragon .corpsPart21 {
+.dragonBackground  .dragon .corpsPart21 {
     right: 90.5%;
     top: 61%;
     height: 80px;
     animation-delay: calc(var(--decalage-corps) * 16);
 }
 
-.dragon .corpsPart21 .skin {
+.dragonBackground  .dragon .corpsPart21 .skin {
     transform: rotate(24deg);
 }
 
-.dragon .corpsPart22 {
+.dragonBackground  .dragon .corpsPart22 {
     right: 95%;
     top: 53%;
     height: 76px;
     animation-delay: calc(var(--decalage-corps) * 17);
 }
 
-.dragon .corpsPart22 .skin {
+.dragonBackground  .dragon .corpsPart22 .skin {
     transform: rotate(38deg);
 }
 
-.dragon .corpsPart23 {
+.dragonBackground  .dragon .corpsPart23 {
     right: 98%;
     top: 45%;
     height: 72px;
     animation-delay: calc(var(--decalage-corps) * 18);
 }
 
-.dragon .corpsPart23 .skin {
+.dragonBackground  .dragon .corpsPart23 .skin {
     transform: rotate(28deg);
 }
 
-.dragon .corpsPart24 {
+.dragonBackground  .dragon .corpsPart24 {
     right: 102%;
     top: 41%;
     height: 61px;
     animation-delay: calc(var(--decalage-corps) * 19);
 }
 
-.dragon .corpsPart24 .skin {
+.dragonBackground  .dragon .corpsPart24 .skin {
     transform: rotate(7deg);
 }
 
-.dragon .tail {
+.dragonBackground  .dragon .tail {
     content: '';
     position: absolute;
     background: linear-gradient(45deg, #c32424 57%, #aa0e0e 100%);
@@ -583,51 +665,55 @@
 }
 
 /*===============================NUAGE=====================*/
-.nuage {
+.dragonBackground .nuage {
     position: absolute;
     width: 529px;
     height: 247px;
     bottom: 4%;
-    right: 50%;
+    right: -55%;
 
+    z-index: 3;
 }
 
-.nuage1 {
-    /*    animation: nuage1 10s linear infinite;*/
+.dragonBackground .nuage1 {
+    animation: nuage1 10s linear infinite;
 }
 
-.nuage2 {
-    /*    animation: nuage2 10s 4s linear infinite;*/
+.dragonBackground .nuage2 {
+    animation: nuage2 10s 4s linear infinite;
 }
 
-.nuage .bulle {
+.dragonBackground .nuage .bulle {
+    z-index: 1;
     background: #ffe9e9;
     border-radius: 50%;
     position: absolute;
+
+
 }
 
-.nuage .bulle1 {
+.dragonBackground .nuage .bulle1 {
     width: 50%;
     height: 81%;
     bottom: 0%;
 }
 
-.nuage .bulle2 {
+.dragonBackground .nuage .bulle2 {
     width: 66%;
     height: 81%;
     bottom: 0%;
     right: 0%;
 }
 
-.nuage .bulle3 {
+.dragonBackground .nuage .bulle3 {
     width: 48%;
     height: 81%;
     top: -7%;
     right: 23%;
 }
 
-.nuage .rond {
-    z-index: 1;
+.dragonBackground .nuage .rond {
+    z-index: 2;
     position: absolute;
 
     border-right: 1px solid #d5c799;
@@ -636,7 +722,7 @@
 
 }
 
-.nuage .rond1 {
+.dragonBackground .nuage .rond1 {
     width: 100px;
     height: 100px;
     left: 15%;
@@ -644,7 +730,7 @@
     transform: rotate(303deg);
 }
 
-.nuage .rond1 > .rond , .nuage .rond3 > .rond  {
+.dragonBackground .nuage .rond1 > .rond, .dragonBackground .nuage .rond3 > .rond {
     width: 100px;
     height: 100px;
     right: -10%;
@@ -652,7 +738,7 @@
     transform: rotate(196deg);
 }
 
-.nuage .rond1 > .rond > .rond ,.nuage .rond3 > .rond >.rond{
+.dragonBackground .nuage .rond1 > .rond > .rond, .dragonBackground .nuage .rond3 > .rond > .rond {
     width: 69px;
     height: 69px;
     right: 33%;
@@ -660,7 +746,23 @@
     transform: rotate(116deg);
 }
 
-.nuage .rond2 {
+.dragonBackground .nuage .rond1 > .rond1 {
+    width: 62px;
+    height: 62px;
+    left: 1%;
+    top: 19%;
+    transform: rotate(132deg);
+}
+
+.dragonBackground .nuage .rond1 > .rond1 > .rond {
+    width: 36px;
+    height: 36px;
+    left: 0%;
+    top: 16%;
+    transform: rotate(132deg);
+}
+
+.dragonBackground .nuage .rond2 {
     width: 65px;
     height: 65px;
     left: 7%;
@@ -669,7 +771,7 @@
 }
 
 
-.nuage .rond2 > .rond, .nuage .rond4 > .rond  {
+.dragonBackground .nuage .rond2 > .rond0 {
     width: 41px;
     height: 41px;
     right: 16%;
@@ -677,7 +779,47 @@
     transform: rotate(206deg);
 }
 
-.nuage .rond3 {
+.dragonBackground .nuage .rond2 > .rond0 > .rond0 {
+    width: 22px;
+    height: 22px;
+    right: 45%;
+    top: 24%;
+    transform: rotate(133deg);
+}
+
+.dragonBackground .nuage .rond2 > .rond0 > .rond1 {
+    width: 43px;
+    height: 43px;
+    right: 96%;
+    top: -105%;
+    transform: rotate(262deg);
+}
+
+.dragonBackground .nuage .rond2 > .rond0 > .rond1 > .rond {
+    width: 18px;
+    height: 18px;
+    right: 17%;
+    top: 56%;
+    transform: rotate(214deg);
+}
+
+.dragonBackground .nuage .rond2 > .rond1 {
+    width: 35px;
+    height: 35px;
+    left: -33%;
+    top: 94%;
+    transform: rotate(172deg);
+}
+
+.dragonBackground .nuage .rond2 > .rond2 {
+    width: 35px;
+    height: 35px;
+    left: -6%;
+    top: 24%;
+    transform: rotate(152deg);
+}
+
+.dragonBackground .nuage .rond3 {
     width: 100px;
     height: 100px;
     left: 50%;
@@ -685,13 +827,78 @@
     transform: rotate(171deg);
 }
 
-.nuage .rond4 {
+.dragonBackground .nuage .rond3 .rond1 {
     width: 65px;
     height: 65px;
-    right: 19%;
-    top: 33%;
-    transform: rotate(342deg);
+    left: -63%;
+    top: -5%;
+    transform: rotate(183deg);
 }
+
+.dragonBackground .nuage .rond3 > .rond1 > .rond {
+    width: 65px;
+    height: 65px;
+    left: 13%;
+    top: 99%;
+    transform: rotate(183deg);
+}
+
+.dragonBackground .nuage .rond3 > .rond1 > .rond > .rond {
+    width: 32px;
+    height: 32px;
+    left: -48%;
+    top: 21%;
+    transform: rotate(161deg);
+}
+
+.dragonBackground .nuage .rond3 .rond2 {
+    width: 65px;
+    height: 65px;
+    left: -5%;
+    top: 23%;
+    transform: rotate(132deg);
+}
+
+.dragonBackground .nuage .rond3 > .rond1 > .rond3 {
+    width: 65px;
+    height: 65px;
+    left: 97%;
+    top: -23%;
+    transform: rotate(88deg);
+}
+
+.dragonBackground .nuage .rond3 > .rond1 > .rond3 > .rond {
+    width: 39px;
+    height: 39px;
+    left: 0%;
+    top: 24%;
+    transform: rotate(116deg);
+}
+
+.dragonBackground .nuage .rond4 {
+    width: 50px;
+    height: 50px;
+    left: 53%;
+    bottom: 8%;
+    transform: rotate(195deg);
+}
+
+.dragonBackground .nuage .rond4 > .rond {
+    width: 31px;
+    height: 31px;
+    left: -59%;
+    bottom: 32%;
+    transform: rotate(195deg);
+}
+
+.dragonBackground .nuage .rond4 > .rond > .rond {
+    width: 15px;
+    height: 15px;
+    left: 37%;
+    bottom: 2%;
+    transform: rotate(164deg);
+}
+
 @keyframes nuage1 {
     0% {
         top: 4%;
@@ -729,38 +936,38 @@
 }
 
 /*===============================LANTERNE=====================*/
-.lantern {
+.dragonBackground  .lantern {
     width: 250px;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
-    left: 50%;
+    left: 65%;
 }
 
-.lantern2 {
-    left: 72%;
+.dragonBackground  .lantern2 {
+    left: 80%;
 }
 
-.lantern2 .light {
+.dragonBackground  .lantern2 .light {
     width: 100% !important;
     height: 189px !important;
 }
 
-.lantern2 .tige {
+.dragonBackground  .lantern2 .tige {
     height: 112px !important;
 
 }
 
-.lantern .tige {
+.dragonBackground  .lantern .tige {
     width: 3px;
     height: 58px;
     background: yellow;
 }
 
-.lantern .light {
+.dragonBackground  .lantern .light {
     width: 70%;
     height: 130px;
     background: red;
@@ -768,7 +975,7 @@
     border-radius: 50%;
 }
 
-.lantern .bar {
+.dragonBackground  .lantern .bar {
     width: 250px;
     height: 194px;
     border-radius: 50%;
@@ -779,7 +986,7 @@
     z-index: 1;
 }
 
-.lantern .bar1 {
+.dragonBackground  .lantern .bar1 {
     bottom: -0%;
     left: 4%;
     width: 85%;
@@ -787,35 +994,35 @@
 }
 
 
-.lantern .bar2 {
+.dragonBackground  .lantern .bar2 {
     bottom: 0%;
     left: 12%;
     height: 100%;
     width: 76%;
 }
 
-.lantern .bar3 {
+.dragonBackground  .lantern .bar3 {
     bottom: -0%;
     left: 21%;
     height: 100%;
     width: 61%;
 }
 
-.lantern .bar4-1 {
+.dragonBackground  .lantern .bar4-1 {
     bottom: 0%;
     left: 43%;
     height: 100%;
     width: 14%;
 }
 
-.lantern .bar4 {
+.dragonBackground  .lantern .bar4 {
     bottom: -0%;
     left: 32%;
     height: 100%;
     width: 36%;
 }
 
-.lantern .bar5 {
+.dragonBackground  .lantern .bar5 {
     bottom: 0%;
     left: 44%;
     height: 100%;
@@ -824,7 +1031,7 @@
     border-left: none;
 }
 
-.lantern .bar6 {
+.dragonBackground  .lantern .bar6 {
     bottom: 0%;
     left: 32%;
     height: 100%;
@@ -833,7 +1040,7 @@
     border-left: none;
 }
 
-.lantern .bar7 {
+.dragonBackground  .lantern .bar7 {
     bottom: 0%;
     left: 26%;
     height: 100%;
@@ -842,7 +1049,7 @@
     border-left: none;
 }
 
-.lantern .bar8 {
+.dragonBackground  .lantern .bar8 {
     bottom: 0%;
     left: 18%;
     height: 100%;
@@ -851,7 +1058,7 @@
     border-left: none;
 }
 
-.lantern .boule {
+.dragonBackground  .lantern .boule {
     width: 28px;
     height: 12px;
     background: yellow;
@@ -864,16 +1071,442 @@
     transform: translate(-50%, 23%);
 }
 
-.lantern .boule1 {
+.dragonBackground  .lantern .boule1 {
     bottom: -3%;
 }
 
-.lantern .boule2 {
+.dragonBackground  .lantern .boule2 {
     bottom: -6%;
     width: 20px;
 }
 
-.lantern .boule3 {
+.dragonBackground  .lantern .boule3 {
     bottom: -9%;
     width: 10px;
+}
+
+/*===============================ARBRE=====================*/
+.dragonBackground  .arbre {
+    clip-path: polygon(0% 60%, 9% 53%, 34% 58%, 52% 45%, 66% 54%, 78% 35%, 90% 0%, 97% 0%, 82% 51%, 65% 72%, 49% 62%, 34% 70%, 11% 65%, 0 84%);
+    width: 51%;
+    height: 31%;
+    background: #7e2c2c;
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+}
+
+.dragonBackground .tacheArbre1 {
+    width: 191px;
+    height: 50px;
+    background: #702424;
+    clip-path: polygon(0% 60%, 8% 41%, 30% 5%, 112% 39%, 52% 55%, 24% 53%, 40% 70%, 95% 65%, 42% 84%);
+    z-index: 3;
+    position: absolute;
+    right: 50%;
+    top: 54%;
+    transform: rotate(327deg);
+}
+
+.dragonBackground .tacheArbre1-1 {
+    right: 21%;
+    top: 54%;
+    transform: rotate(148deg);
+}
+
+.dragonBackground  .tacheArbre1-2 {
+    right: 71%;
+    top: 58%;
+    transform: rotate(30deg);
+}
+
+.dragonBackground  .tacheArbre1-3 {
+    right: 19%;
+    top: 39%;
+    transform: rotate(342deg);
+}
+
+.dragonBackground  .tacheArbre2 {
+    width: 245px;
+    height: 87px;
+    background: #782929;
+    clip-path: polygon(0% 60%, 8% 41%, 36% 14%, 59% 5%, 100% 20%, 35% 31%, 58% 33%, 103% 54%, 51% 59%, 24% 48%, 40% 70%, 61% 65%, 42% 79%);
+    z-index: 3;
+    position: absolute;
+    right: 34%;
+    top: 44%;
+    transform: rotate(12deg);
+}
+
+.dragonBackground  .tacheArbre2-1 {
+    right: 9%;
+    top: 29%;
+    transform: rotate(148deg);
+}
+
+.dragonBackground  .tacheArbre2-2 {
+    right: 62%;
+    top: 58%;
+    transform: rotate(157deg);
+}
+
+.dragonBackground  .tacheArbre2-3 {
+    right: 79%;
+    top: 52%;
+    transform: rotate(12deg);
+}
+
+.dragonBackground  .tacheArbre2-4 {
+    right: 87%;
+    top: 65%;
+    transform: rotate(300deg);
+}
+
+.dragonBackground  .tacheArbre2-5 {
+    right: 0%;
+    top: 1%;
+    transform: rotate(300deg);
+}
+
+.dragonBackground  .tacheArbre2-6 {
+    right: -4%;
+    top: 8%;
+    transform: rotate(300deg);
+}
+
+/*===============================FLEUR=====================*/
+.dragonBackground  .fleurs {
+    position: absolute;
+    width: 55%;
+    height: 30%;
+    z-index: 2;
+}
+
+.dragonBackground  .fleur {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    z-index: 3;
+    top: 20%;
+    left: 50%;
+    animation: fleur 2s linear infinite;
+}
+
+.dragonBackground  .fleur1 {
+    top: 51%;
+    left: 5%;
+}
+
+.dragonBackground  .fleur2 {
+    top: 20%;
+    left: 50%;
+}
+
+.dragonBackground  .fleur2 {
+    top: 49%;
+    left: 22%;
+}
+
+.dragonBackground  .fleur3 {
+    top: 62%;
+    left: 31%;
+}
+
+.dragonBackground  .fleur4 {
+    top: 49%;
+    left: 34%;
+}
+
+.dragonBackground  .fleur5 {
+    top: 43%;
+    left: 50%;
+}
+
+.dragonBackground  .fleur6 {
+    top: 74%;
+    left: 0%;
+}
+
+.dragonBackground  .fleur7 {
+    top: 58%;
+    left: 62%;
+}
+
+.dragonBackground  .fleur8 {
+    top: 31%;
+    left: 69%;
+}
+
+.dragonBackground  .fleur9 {
+    top: 44%;
+    left: 72%;
+}
+
+.dragonBackground  .fleur10 {
+    top: 7%;
+    left: 83%;
+}
+
+
+.dragonBackground  .fleur .centre {
+    width: 20%;
+    height: 20%;
+    background: #AF1424;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.dragonBackground  .fleur .petal {
+    width: 236%;
+    height: 259%;
+    position: absolute;
+    bottom: 100%;
+    clip-path: polygon(17% 94%, 10% 84%, 3% 71%, 0% 45%, 5% 25%, 13% 12%, 23% 6%, 35% 3%, 41% 9%, 50% 4%, 62% 9%, 71% 3%, 77% 6%, 87% 12%, 95% 25%, 100% 45%, 97% 71%, 90% 84%, 83% 94%, 71% 100%, 28% 100%);
+    left: -67%;
+    z-index: 0;
+}
+
+.dragonBackground  .fleur .petal1 {
+    bottom: -10%;
+    left: -185%;
+    background: #E56D92;
+    transform: rotate(307deg);
+}
+
+.dragonBackground  .fleur .petal2 {
+    bottom: 71%;
+    left: -42%;
+    background: #FDC1DA;
+    transform: rotate(13deg);
+}
+
+.dragonBackground  .fleur .petal3 {
+    bottom: -63%;
+    left: 73%;
+
+    background: #E56D92;
+    transform: rotate(80deg);
+}
+
+.dragonBackground  .fleur .petal4 {
+
+    background: #fd91be;
+    bottom: -190%;
+    left: 25%;
+    transform: rotate(123deg);
+}
+
+.dragonBackground  .fleur .petal5 {
+    bottom: -221%;
+    left: -102%;
+
+    background: #E56D92;
+    transform: rotate(192deg);
+}
+
+.dragonBackground  .fleur .petal6 {
+    bottom: -143%;
+    left: -203%;
+    background: #fd91be;
+    transform: rotate(259deg);
+}
+
+.dragonBackground  .fleur .centre2 {
+    width: 32%;
+    height: 32%;
+    background: #d34566d9;
+    border-radius: 50%;
+    z-index: 1;
+    filter: blur(14px);
+}
+
+.dragonBackground  .fleur .bourgeon {
+    width: 35%;
+    height: 58%;
+    border-bottom: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 46%;
+    left: 31%;
+    z-index: 2;
+}
+
+.dragonBackground  .fleur .bourgeon:after {
+    content: '';
+    width: 13%;
+    height: 7%;
+    background: #df2970;
+    position: absolute;
+    bottom: 46%;
+    left: 45%;
+    border-radius: 50%;
+}
+
+.dragonBackground  .fleur .bourgeon:before {
+    content: '';
+    width: 13%;
+    height: 7%;
+    background: #df2970;
+    position: absolute;
+    bottom: 46%;
+    left: 45%;
+    border-radius: 50%;
+}
+
+.dragonBackground  .fleur .bourgeon1:before {
+    bottom: 44%;
+    left: -7%;
+}
+
+.dragonBackground  .fleur .bourgeon1:after {
+    bottom: 44%;
+    left: 92%;
+}
+
+.dragonBackground  .fleur .bourgeon2 {
+    transform: rotate(90deg);
+    height: 12%;
+    width: 44%;
+    left: 32%;
+    bottom: 47%;
+}
+
+.dragonBackground  .fleur .bourgeon2:before, .dragonBackground  .fleur .bourgeon2:after {
+    width: 8%;
+    height: 32%;
+}
+
+.dragonBackground  .fleur .bourgeon2:before {
+    bottom: 44%;
+    left: -3%;
+}
+
+.dragonBackground  .fleur .bourgeon2:after {
+    bottom: 44%;
+    left: 95%;
+}
+
+.dragonBackground  .fleur .bourgeon3 {
+    transform: rotate(358deg);
+    height: 23%;
+    width: 50%;
+    left: 20%;
+    bottom: 46%;
+}
+
+.dragonBackground  .fleur .bourgeon3:before, .dragonBackground  .fleur .bourgeon3:after {
+    width: 7%;
+    height: 15%;
+}
+
+.dragonBackground  .fleur .bourgeon3:before {
+    bottom: 44%;
+    left: -3%;
+}
+
+.dragonBackground  .fleur .bourgeon3:after {
+    bottom: 44%;
+    left: 95%;
+}
+
+.dragonBackground  .fleur .bourgeon4 {
+    transform: rotate(304deg);
+    height: 25%;
+    width: 50%;
+    left: 17%;
+    bottom: 46%;
+}
+
+.dragonBackground  .fleur .bourgeon4:before, .dragonBackground  .fleur .bourgeon4:after {
+    width: 7%;
+    height: 15%;
+}
+
+.dragonBackground  .fleur .bourgeon4:before {
+    bottom: 44%;
+    left: -3%;
+}
+
+.dragonBackground  .fleur .bourgeon4:after {
+    bottom: 44%;
+    left: 95%;
+}
+
+.dragonBackground  .fleur .bourgeon5 {
+    transform: rotate(58deg);
+    height: 25%;
+    width: 50%;
+    left: 30%;
+    bottom: 46%;
+}
+
+.dragonBackground  .fleur .bourgeon5:before, .dragonBackground  .fleur .bourgeon5:after {
+    width: 7%;
+    height: 15%;
+}
+
+.dragonBackground  .fleur .bourgeon5:before {
+    bottom: 44%;
+    left: -3%;
+}
+
+.dragonBackground  .fleur .bourgeon5:after {
+    bottom: 44%;
+    left: 95%;
+}
+
+.dragonBackground  .fleur .bourgeon6 {
+    transform: rotate(346deg);
+    height: 25%;
+    width: 32%;
+    left: 30%;
+    bottom: 46%;
+}
+
+.dragonBackground  .fleur .bourgeon6:before, .dragonBackground  .fleur .bourgeon6:after {
+    width: 8%;
+    height: 11%;
+}
+
+.dragonBackground  .fleur .bourgeon6:before {
+    bottom: 44%;
+    left: -3%;
+}
+
+.dragonBackground  .fleur .bourgeon6:after {
+    bottom: 44%;
+    left: 95%;
+}
+
+
+.dragonBackground  .fleur .bourgeon8 {
+    transform: rotate(271deg);
+    height: 5%;
+    width: 32%;
+    left: 30%;
+    bottom: 48%;
+}
+
+.dragonBackground  .fleur .bourgeon8:before, .dragonBackground  .fleur .bourgeon8:after {
+    width: 10%;
+    height: 68%;
+}
+
+.dragonBackground  .fleur .bourgeon8:before {
+    bottom: 44%;
+    left: -3%;
+}
+
+.dragonBackground  .fleur .bourgeon8:after {
+    bottom: 44%;
+    left: 95%;
+}
+
+@keyframes fleur {
+    0%, 100% {
+        scale: 1;
+    }
+    50% {
+        scale: 0.8;
+    }
 }

@@ -3,75 +3,51 @@
 <div class="dragonBackground">
     <div class="round">
     </div>
-    <div class="lantern">
-        <div class="tige"></div>
-        <div class="light">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-            <div class="bar bar4"></div>
+    <div class="mounts">
 
-            <div class="bar bar4-1"></div>
-            <div class="bar bar5"></div>
-            <div class="bar bar6"></div>
-            <div class="bar bar7"></div>
-            <div class="bar bar8"></div>
-            <div class="boule boule1"></div>
-            <div class="boule boule2"></div>
-            <div class="boule boule3"></div>
-        </div>
+        <div class="mount mount8"></div>
+        <div class="mount mount9"></div>
+        <div class="mount mount10"></div>
+        <div class="mount mount1"></div>
+        <div class="mount mount2"></div>
+        <div class="mount mount3"></div>
+        <div class="mount mount4"></div>
+        <div class="mount mount5"></div>
+        <div class="mount mount6"></div>
+        <div class="mount mount7"></div>
 
     </div>
-    <div class="lantern lantern2">
-        <div class="tige"></div>
-        <div class="light">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-            <div class="bar bar4"></div>
 
-            <div class="bar bar4-1"></div>
-            <div class="bar bar5"></div>
-            <div class="bar bar6"></div>
-            <div class="bar bar7"></div>
-            <div class="bar bar8"></div>
-            <div class="boule boule1"></div>
-            <div class="boule boule2"></div>
-            <div class="boule boule3"></div>
-        </div>
-
+    <div class="arbre">
+        <div class="tacheArbre2"></div>
+        <div class="tacheArbre2 tacheArbre2-1"></div>
+        <div class="tacheArbre2 tacheArbre2-2"></div>
+        <div class="tacheArbre2 tacheArbre2-3"></div>
+        <div class="tacheArbre2 tacheArbre2-4"></div>
+        <div class="tacheArbre2 tacheArbre2-5"></div>
+        <div class="tacheArbre2 tacheArbre2-6"></div>
+        <div class="tacheArbre1"></div>
+        <div class="tacheArbre1 tacheArbre1-1"></div>
+        <div class="tacheArbre1 tacheArbre1-2"></div>
+        <div class="tacheArbre1 tacheArbre1-3"></div>
     </div>
+    <div class="fleurs">
+        <div class="fleur fleur1"></div>
+        <div class="fleur fleur2"></div>
+        <div class="fleur fleur3"></div>
+        <div class="fleur fleur4"></div>
+        <div class="fleur fleur5"></div>
+        <div class="fleur fleur6"></div>
+        <div class="fleur fleur7"></div>
+        <div class="fleur fleur8"></div>
+        <div class="fleur fleur9"></div>
+        <div class="fleur fleur10"></div>
+    </div>
+    <div class="lantern"></div>
+    <div class="lantern lantern2"></div>
     <div class="nuage nuage1">
-        <div class="bulle bulle1">
-
-
-        </div>
-        <div class="bulle bulle2">
-        </div>
-        <div class="bulle bulle3"></div>
-        <div class="rond rond1">
-            <div class="rond ">
-                <div class="rond "></div>
-            </div>
-        </div>
-        <div class="rond rond2">
-            <div class="rond ">
-            </div>
-        </div>
-        <div class="rond rond3">
-            <div class="rond ">
-                <div class="rond "></div>
-            </div>
-        </div>
-        <div class="rond rond4">
-            <div class="rond ">
-            </div>
-        </div>
     </div>
     <div class="nuage nuage2">
-        <div class="bulle bulle1"></div>
-        <div class="bulle bulle2"></div>
-        <div class="bulle bulle3"></div>
     </div>
     <div class="dragon">
         <div class="meche meche2"></div>
@@ -80,269 +56,109 @@
 
             <div class="corpsPart corpsPart24">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                     <div class="corpsPart tail"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart23">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart22">
 
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart21">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart20">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart19">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart18">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart17">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart16">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart15">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
 
 
             <div class="corpsPart corpsPart14">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart13">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
 
             <div class="corpsPart corpsPart8">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
+
                 </div>
             </div>
             <div class="corpsPart corpsPart7">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart6">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart5">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart4">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
             </div>
             <div class="corpsPart corpsPart3">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
-
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
 
 
                 </div>
             </div>
             <div class="corpsPart corpsPart2">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
 
                 </div>
             </div>
             <div class="corpsPart corpsPart1">
                 <div class="skin">
-                    <div class="ecaille ecaille4"></div>
-                    <div class="ecaille ecaille5"></div>
-                    <div class="ecaille ecaille6"></div>
-                    <div class="ecaille ecaille1"></div>
-                    <div class="ecaille ecaille2"></div>
-                    <div class="ecaille ecaille3"></div>
 
-                    <div class="tache tache5"></div>
-                    <div class="tache tache6"></div>
                 </div>
 
             </div>

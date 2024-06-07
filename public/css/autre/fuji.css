@@ -1,0 +1,550 @@
+:root{
+    --montfujiCoul1 : #ffffff;
+    --montfujiCoul2 : #fcf6f6;;
+
+}
+
+
+.fuji-bg{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #0046A1 20%, #9FCCE2 70%)
+}
+
+
+.fuji-bg .mont-fuji{
+    width: 77vw;
+    height: 58vh;
+    position: absolute;
+    left: 0%;
+    bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    border: 2px solid black;
+}
+
+.fuji-bg .mont-fuji>div{
+
+    border: 2px solid black;
+    position: relative;
+}
+.fuji-bg .mont-fuji .top{
+    width: 40%;
+    height: 28%;
+}
+.fuji-bg .mont-fuji .middle{
+    width: 64%;
+    height: 32%; border: 2px solid black;
+}
+.fuji-bg .mont-fuji .bottom{
+    width: 100%;
+    height: 40%; border: 2px solid black;
+
+}
+
+.fuji-bg [class^="cristal"]{
+    width: 15px;
+    height: 50px;
+    clip-path: polygon(50% 0, 100% 64%, 50% 100%, 0% 47%);
+    position: absolute;
+}
+
+
+/*================================================TOP OF MONT-FUJI===========*/
+
+.fuji-bg .mont-fuji .top .cristal1 {
+    bottom: 71%;
+    left: 41%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul1);
+}
+
+.fuji-bg .mont-fuji .top .cristal2 {
+    bottom: 71%;
+    left: 43%;
+    transform: rotate(38deg);
+    background: var(--montfujiCoul1);
+}
+
+.fuji-bg .mont-fuji .top .cristal3 {
+    bottom: 67%;
+    left: 45%;
+    transform: rotate(17deg);
+    background: var(--montfujiCoul1);
+}
+
+.fuji-bg .mont-fuji .top .cristal4 {
+    bottom: 66%;
+    left: 47%;
+    transform: rotate(2deg);
+    background: var(--montfujiCoul1);
+}
+
+.fuji-bg .mont-fuji .top .cristal5 {
+    bottom: 66%;
+    left: 48%;
+    transform: rotate(6deg);
+    background: var(--montfujiCoul1);
+}
+
+.fuji-bg .mont-fuji .top .cristal6 {
+    bottom: 65%;
+    left: 50%;
+    transform: rotate(0deg);
+    background: var(--montfujiCoul1);
+}
+
+.fuji-bg .mont-fuji .top .cristal7 {
+    bottom: 66%;
+    left: 51%;
+    transform: rotate(0deg);
+    background: var(--montfujiCoul1);
+}
+
+.fuji-bg .mont-fuji .top .cristal8 {
+    bottom: 65%;
+    left: 53%;
+    transform: rotate(350deg);
+    background: var(--montfujiCoul1);
+
+}
+
+.fuji-bg .mont-fuji .top .cristal9 {
+    bottom: 67%;
+    left: 55%;
+    transform: rotate(345deg);
+    background: var(--montfujiCoul1);
+}
+
+.fuji-bg .mont-fuji .top .cristal10 {
+    bottom: 66%;
+    left: 56%;
+    transform: rotate(345deg);
+    background: var(--montfujiCoul1);
+}
+
+/* Continuer jusqu'à cristal30 */
+.fuji-bg .mont-fuji .top .cristal11 {
+    bottom: 64%;
+    left: 58%;
+    transform: rotate(336deg);
+    background: var(--montfujiCoul1);
+}
+
+.fuji-bg .mont-fuji .top .cristal12 {
+    bottom: 63%;
+    left: 38%;
+    transform: rotate(41deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal13 {
+    bottom: 62%;
+    left: 40%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+/* Continuez jusqu'à cristal30 */
+.fuji-bg .mont-fuji .top .cristal14 {
+    bottom: 59%;
+    left: 43%;
+    transform: rotate(31deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal15 {
+    bottom: 58%;
+    left: 46%;
+    transform: rotate(6deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal16 {
+    bottom: 61%;
+    left: 36%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+/* Continuez jusqu'à cristal30 */
+.fuji-bg .mont-fuji .top .cristal17 {
+    bottom: 50%;
+    left: 36%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal18 {
+    bottom: 48%;
+    left: 40%;
+    transform: rotate(27deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal19 {
+    bottom: 49%;
+    left: 44%;
+    transform: rotate(14deg);
+    background: var(--montfujiCoul2);
+}
+
+/* Continuez jusqu'à cristal30 */
+.fuji-bg .mont-fuji .top .cristal20 {
+    bottom: 51%;
+    left: 32%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal21 {
+    bottom: 44%;
+    left: 33%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal22 {
+    bottom: 45%;
+    left: 37%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+/* Continuez jusqu'à cristal30 */
+.fuji-bg .mont-fuji .top .cristal23 {
+    bottom: 48%;
+    left: 49%;
+    transform: rotate(1deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal24 {
+    bottom: 41%;
+    left: 47%;
+    transform: rotate(10deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal25 {
+    bottom: 41%;
+    left: 42%;
+    transform: rotate(14deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal26 {
+    bottom: 43%;
+    left: 51%;
+    transform: rotate(352deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal27 {
+    bottom: 52%;
+    left: 52%;
+    transform: rotate(359deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal28 {
+    bottom: 46%;
+    left: 54%;
+    transform: rotate(353deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal29 {
+    bottom: 50%;
+    left: 55%;
+    transform: rotate(339deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .top .cristal30 {
+    bottom: 45%;
+    left: 45%;
+    transform: rotate(15deg);
+    background: var(--montfujiCoul2);
+}
+
+/*================================================MIDDLE OF MONT-FUJI===========*/
+.fuji-bg .mont-fuji .middle .cristal1 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal2 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal3 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal4 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal5 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal6 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal7 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal8 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal9 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal10 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal11 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal12 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal13 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal14 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal15 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal16 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal17 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal18 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal19 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal20 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal21 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal22 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+.fuji-bg .mont-fuji .middle .cristal23 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal24 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal25 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul2);
+}
+
+.fuji-bg .mont-fuji .middle .cristal26 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: var(--montfujiCoul1);
+}
+
+.fuji-bg .mont-fuji .middle .cristal27 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+.fuji-bg .mont-fuji .middle .cristal28 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+.fuji-bg .mont-fuji .middle .cristal29 {
+    bottom: 71%;
+    left: 0%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+.fuji-bg .mont-fuji .middle .cristal30 {
+    bottom: 71%;
+    left: 41%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+.fuji-bg .mont-fuji .middle .cristal31 {
+    bottom: 71%;
+    left: 41%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+.fuji-bg .mont-fuji .middle .cristal32 {
+    bottom: 71%;
+    left: 41%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+.fuji-bg .mont-fuji .middle .cristal33 {
+    bottom: 71%;
+    left: 41%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+.fuji-bg .mont-fuji .middle .cristal34 {
+    bottom: 71%;
+    left: 41%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+.fuji-bg .mont-fuji .middle .cristal35 {
+    bottom: 71%;
+    left: 41%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+.fuji-bg .mont-fuji .middle .cristal36 {
+    bottom: 71%;
+    left: 41%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+.fuji-bg .mont-fuji .middle .cristal37 {
+    bottom: 71%;
+    left: 41%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+.fuji-bg .mont-fuji .middle .cristal38 {
+    bottom: 71%;
+    left: 41%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+.fuji-bg .mont-fuji .middle .cristal39 {
+    bottom: 71%;
+    left: 41%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+.fuji-bg .mont-fuji .middle .cristal40 {
+    bottom: 71%;
+    left: 41%;
+    transform: rotate(45deg);
+    background: #ffffff;
+}

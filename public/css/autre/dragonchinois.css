@@ -24,8 +24,16 @@
     justify-content: end;
     align-items: center;
     z-index: 1;
+    animation: mooveDragon 40s linear infinite;
 }
-
+@keyframes mooveDragon {
+    0% {
+        left: -80%;
+    }
+    100%{
+        left: 110%;
+    }
+}
 /*===============================BACKGROUND=====================*/
 
 .dragonBackground .round {

@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let top = document.querySelector('.top')
         let middle = document.querySelector('.middle')
         let bottom = document.querySelector('.bottom')
-        top.innerHTML = getCristal(30)
+        top.innerHTML = getCristal(70)
         middle.innerHTML =  getCristal(40)
         bottom.innerHTML =  getCristal(50)
         function getCristal(occurs) {

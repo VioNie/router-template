@@ -10,7 +10,6 @@ $router->map( 'GET', '/', function() {
 // map users details page
 $router->map( 'GET|POST', '/day/[i:id]/', function( $id ) {
     App\View\View::render('day/cssDay'.$id,[],'day');
-
 });
 // map users details page
 $router->map( 'GET|POST', '/other/[*:name]/', function( $name ) {

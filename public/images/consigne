@@ -1,0 +1,8 @@
+Dossier dans lequel tu mets toutes les images de ton site,
+pour plus de lisibilité le fichier icon est dédié seulement
+aux icones et non aux images
+
+tu aura juste à les appeller  :
+<img src="/image/ex.png" alt="">
+<img src="/image/icon/ex.png" alt="">
+<img src="/image/icon/ex.svg" alt="">

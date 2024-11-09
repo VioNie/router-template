@@ -1,0 +1,7 @@
+/day est reservé au css 100
+
+/other est au cas ou tu voudrais mettre d'autres choses
+sur le site, tu n'en aura pas besoin si tu te limite au css100
+
+home.html.php contient juste l'affiche lorsque l'on est au /
+il utilise comme bas la /template/day/bas.html.php par defaut

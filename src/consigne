@@ -1,0 +1,3 @@
+View permet d'afficher le template que tu veux selon les paramètres de l'url passés
+
+Tu n'as pas besoin de touché à ce fichier pour que le router fonctionne

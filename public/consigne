@@ -1,0 +1,18 @@
+le point d'entrée est le index.php
+
+
+php -S localhost:8080 -t public
+
+cette commande permet de lancer un server pour pouvoir voir le projet.
+La machine va aller chercher dans le dossier /public, il va chercher
+un index.php et le servir
+
+le server sera sur le port 8080 de ton pc en allant sur http://localhost:8080
+tu accedera à ton site
+
+
+
+
+
+
+Pour l'index.php

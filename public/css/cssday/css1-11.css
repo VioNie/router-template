@@ -1,0 +1,655 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+                        /* ------------------
+                           |                |
+                           |   CSS DAY 001  |
+                           |                |
+                           ------------------ */
+
+.frame1 {
+    background: linear-gradient(45deg, #42389f, #4CC4C8);
+    color: white;
+    font-family: "Courier New";
+    font-weight: 700;
+}
+
+.frame1 .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.frame1 .numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.frame1 .un {
+    z-index: 1;
+}
+
+.frame1 .vertical {
+    width: 26px;
+    height: 106px;
+    background-color: white;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    z-index: 3;
+}
+
+.frame1 .diagonal {
+    width: 22px;
+    height: 48px;
+    background-color: white;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    position: absolute;
+    rotate: 45deg;
+    left: -18px;
+    z-index: -1;
+}
+
+.frame1 .zero1 {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    border: 26px solid white;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+    position: absolute;
+    right: 90px;
+
+}
+
+.frame1 .zero2 {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    border: 26px solid white;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+.frame1 .days span {
+    font-size: 90px;
+    line-height: 0.85;      /* Ajuste l'espacement vertical */
+}
+
+.frame1 .cssChallenge span {
+    font-size: 27px;
+    line-height: 0.2;      /* Ajuste l'espacement vertical */
+    padding-top: 0.1em;    /* Contrôle l'espacement au-dessus */
+    padding-bottom: 0.1em;
+}
+
+
+                                /* ------------------
+                                   |                |
+                                   |   CSS DAY 002  |
+                                   |                |
+                                   ------------------ */
+
+.frame2{
+    background-color: #3EAF82;
+}
+
+.frame2 .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.rectangle {
+    width: 80px;
+    height: 8px;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+}
+
+.burger:focus .midBar {
+    transform: scale(0); /* Réduction à 0 */
+    opacity: 0; /* Cache complètement la ligne centrale */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Ajout de la rotation après le déplacement */
+.burger:focus .topBar, .burger:focus .botBar {
+    transition: transform 0.3s ease 0.3s; /* La rotation se déclenche après le déplacement */
+}
+
+.burger:focus .topBar {
+    transform: translateY(20px) rotate(45deg); /* Ligne supérieure */
+}
+
+.burger:focus .botBar {
+    transform: translateY(-20px) rotate(-45deg); /* Ligne inférieure */
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+
+                                    /* ------------------
+                                       |                |
+                                       |   CSS DAY 003  |
+                                       |                |
+                                       ------------------ */
+.frame3{
+    background-color: #272C34;
+}
+
+.frame3 .circle{
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50%);
+    background-color:red;
+    display: flex;
+    flex-direction: column;
+}
+
+.frame3 .sand {
+    background-color: #F0DE75;
+    width: 200px;
+    height: 30%;
+    z-index: 2;
+}
+
+.frame3 .sky {
+    background-color: #7DDFFC;
+    width: 200px;
+    height: 70%;
+}
+
+.noyauSun {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: rotate(-25deg)translate(-50%, -50%);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: arc-motion 4s ease-out  infinite;
+}
+
+.noyauSun::before {
+    display: flex;
+    content:"";
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #FFEF02;
+    filter: blur(2px);
+    position: absolute;
+    bottom: 612%;
+    left: -400%;
+
+}
+
+@keyframes arc-motion {
+    0% {
+        transform: rotate(-25deg)
+    }
+
+    25% {
+        transform: rotate(0deg)
+    }
+
+    85% {
+        transform: rotate(75deg)
+    }
+
+    100% {
+        transform: rotate(330deg)
+    }
+}
+
+
+
+.leftTriangle{
+    position: absolute;
+    top: 67px;
+    left: 35px;
+    height: 57px;
+    width: 116px;
+    background: #F4F4F4;
+    clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+    transform: translateY(28%);
+}
+
+.rightTriangle{
+    position: absolute;
+    top: 67px;
+    left: 93px;
+    height: 57px;
+    width: 58px;
+    background: #DDDADA;
+    clip-path: polygon(30% 100%, 100% 100%, 0% 0%);
+    transform: translateY(28%);
+}
+
+
+.shadow {
+    width: 100%;
+    height: 100px;
+    clip-path: polygon(17.5% 0%, 75% 0%, 100% 5%);
+    background-color: #BEB15E;
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    animation: shapeAnimation 4s ease-out  infinite;
+}
+
+@keyframes shapeAnimation {
+    0% {
+        clip-path: polygon(17.5% 0%, 75% 0%, 100% 5%);
+    }
+
+    25% {
+        clip-path: polygon(17.5% 0%, 75% 0%, 100% 30%);
+    }
+
+    50% {
+        clip-path: polygon(17.5% 0%, 75% 0%, 75% 20%);
+    }
+
+    100% {
+        clip-path: polygon(17.5% 0%, 75% 0%, 0% 5%);
+    }
+}
+
+
+
+                                    /* ------------------
+                                       |                |
+                                       |   CSS DAY 004  |
+                                       |                |
+                                       ------------------ */
+
+.frame4{
+    background-color: #E56262;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rond-g {
+    width: 125px;
+    Height: 125px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: gRond 6s ease-out  infinite;
+}
+
+.rond-m {
+    width: 75px;
+    Height: 75px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: mRond 6s ease-out infinite;
+    scale: 0;
+}
+
+.rond-p {
+    width: 25px;
+    Height: 25px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: pRond 6s ease-out infinite;
+    scale: 0;
+}
+
+@keyframes gRond {
+    0% {
+        scale: 0;
+    }
+
+    16% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1;
+    }
+
+    72% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 0;
+    }
+}
+
+@keyframes mRond {
+    10% {
+        scale: 0;
+    }
+
+    32% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1;
+    }
+
+    60% {
+        scale: 1;
+    }
+
+    82% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 0;
+    }
+}
+
+@keyframes pRond {
+    22% {
+        scale: 0;
+    }
+
+    50% {
+        scale: 1;
+    }
+
+    66% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 0;
+    }
+}
+
+
+                                                /* ------------------
+                                                   |                |
+                                                   |   CSS DAY 005  |
+                                                   |                |
+                                                   ------------------ */
+
+.frame5{
+    background-color: #43A7A1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.report {
+    width: 275px;
+    height: 225px;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+    background-color: white;
+}
+
+.topContent {
+    background: #F0BA63;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.botContent {
+    background: #FFFFFF;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 12px;
+}
+
+.leftReport {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.rightReport {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.frame5 .date {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.frame5 .revenue {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.frame5 .title {
+    color: white;
+    font-size: 1rem;
+}
+
+.frame5 .dollars {
+    color: white;
+    font-size: 1rem;
+}
+
+.frame5 .row {
+    height: 25%;
+    width: 100%;
+    border-bottom: #d1d1d1 1px solid;
+}
+
+.botContent .row-4 {
+    border: none;
+}
+
+.botContent .row-1 {
+    justify-content: flex-end;
+}
+
+.frame5 .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+span.day {
+    color: #d1d1d1;
+    font-size: 0.6rem;
+    padding: 0;
+    width: fit-content;
+}
+
+.legende {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+}
+
+.red {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.blue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.rectangleBlue {
+    width: 10px;
+    height: 2px;
+    border-radius: 100px;
+    background: #7ba2ff;
+}
+
+.rectangleRed {
+    width: 10px;
+    height: 2px;
+    border-radius: 100px;
+    background: #fa7373;
+}
+
+.legende span  {
+    color: #d1d1d1;
+    font-size: 0.6rem;
+    padding: 0;
+    width: fit-content;
+}
+
+.cercleR {
+    min-width: 5px;
+    width: 5px;
+    max-width: 5px;
+    min-height: 5px;
+    height: 5px;
+    max-height: 5px;
+    padding: 0;
+    border-radius: 50%;
+    background: #fa7373;
+    position: absolute;
+}
+
+.cercle1 {
+    top: 110%;
+    left: 5%;
+}
+
+.cercle2 {
+    top: 20%;
+    left: 20%;
+}
+
+.cercle3 {
+    top: 52%;
+    left: 36%;
+}
+
+.cercle4 {
+    top: 20%;
+    left: 52%;
+}
+
+.cercle5 {
+    top: 84%;
+    left: 66%;
+}
+
+.cercle6 {
+    top: 102%;
+    left: 80%;
+}
+
+.cercle7 {
+    top: 36%;
+    left: 95%;
+}
+
+.cercleB {
+    min-width: 5px;
+    width: 5px;
+    max-width: 5px;
+    min-height: 5px;
+    height: 5px;
+    max-height: 5px;
+    padding: 0;
+    border-radius: 50%;
+    background: #7ba2ff;
+    position: absolute;
+}
+
+.cercle8 {
+    top: 44%;
+    left: 5%;
+}
+
+.cercle9 {
+    top: 24%;
+    left: 20%;
+}
+
+.cercle10 {
+    top: 54%;
+    left: 36%;
+}
+
+.cercle11 {
+    top: 36%;
+    left: 52%;
+}
+
+.cercle12 {
+    top: 52%;
+    left: 66%;
+}
+
+.cercle13 {
+    top: 78%;
+    left: 80%;
+}
+
+.cercle14 {
+    top: 56%;
+    left: 95%;
+}
+
+.row svg {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    height: 116%;
+    position: absolute;
+    bottom: -16%;
+    left: 0;
+}
+
+
+.row line {
+    stroke-width: 3px;
+}
